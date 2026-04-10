@@ -3,17 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog + SEO Backlink Tool | Hilal Madany | Fatehpur UP</title>
-<meta name="description" content="Hilal Madany Blog — Engineering careers, AI technology, new jobs 2025, ITI & Diploma guidance, business startups, affiliate marketing, Gulf job reality, and school student Q&A. Plus secret SEO backlink vault for high DA classified submissions. Written from Fatehpur, Uttar Pradesh. BPL students free coaching.">
-<meta name="keywords" content="engineering blog Fatehpur UP, career blog UP India, AI blog, new jobs 2025, ITI jobs India, Gulf jobs, startup blog India, affiliate marketing, backlink tool, classified submission sites, SEO tool, Hilal Madany, hilalmadany.com">
+<title>Blog + Backlink SEO Tool | Hilal Madany | Fatehpur UP</title>
+<meta name="description" content="Hilal Madany Blog — Engineering careers, AI technology, new jobs 2025, ITI & Diploma guidance, business startups, affiliate marketing, Gulf job reality. Plus live backlink monitoring dashboard.">
 <meta name="author" content="Syed Hilaluddin Madany — hilalmadany.com">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.hilalmadany.com/blog.html">
-<meta property="og:title" content="Hilal Madany Blog | Careers · AI · Engineering · Jobs · Startups + SEO Tools">
-<meta property="og:description" content="Engineering careers, AI technology, new jobs 2025, ITI & Diploma guidance, business startups, affiliate marketing. From Fatehpur UP. BPL students free. + secret backlink database.">
-<meta property="og:url" content="https://www.hilalmadany.com/blog.html">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -58,56 +52,110 @@ nav.blog-nav { position:fixed; top:40px; left:0; right:0; z-index:200; backgroun
 .sec-label { font-family:var(--fm); font-size:.65rem; color:var(--teal); text-transform:uppercase; margin-bottom:.5rem; display:block; }
 h2.sec-title { font-family:var(--fh); font-size:clamp(1.5rem,2.5vw,2rem); font-weight:800; margin-bottom:.5rem; }
 h2.sec-title span { color:var(--teal); }
-.sec-lede { font-size:.87rem; color:var(--muted); margin-bottom:2rem; }
+
+/* VISIBLE SEO STRATEGY BOX - THIS SHOWS ON WEBSITE */
+.seo-strategy-box {
+  background: linear-gradient(135deg, #0c2f2a 0%, #1a4a42 100%);
+  border-left: 6px solid #0fb8a4;
+  border-radius: 20px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  animation: pulse-border 2s ease-in-out infinite;
+}
+@keyframes pulse-border {
+  0%, 100% { border-left-color: #0fb8a4; box-shadow: 0 8px 24px rgba(15,184,164,0.2); }
+  50% { border-left-color: #0a7a70; box-shadow: 0 8px 24px rgba(10,122,112,0.4); }
+}
+.seo-strategy-box h3 {
+  font-family: var(--fh);
+  font-size: 1.2rem;
+  color: #0fb8a4;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.seo-strategy-box h3::before {
+  content: "💡";
+  font-size: 1.3rem;
+}
+.seo-strategy-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.seo-steps {
+  flex: 2;
+}
+.seo-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+}
+.seo-step-num {
+  background: #0fb8a4;
+  color: #0c2f2a;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.7rem;
+}
+.seo-url-box {
+  background: #0a1f1c;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #0fb8a4;
+  border: 1px dashed #0fb8a4;
+}
+.seo-warning {
+  background: rgba(196,118,14,0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  color: #e8a820;
+  margin-top: 0.8rem;
+}
+@media (max-width:700px) { .seo-strategy-content { flex-direction: column; align-items: flex-start; } }
+
 .featured-article { background:var(--ink); border-radius:20px; padding:2rem 2.2rem; margin-bottom:2.5rem; border:1px solid rgba(15,184,164,.15); }
 .fa-badge { display:inline-flex; font-family:var(--fm); font-size:.62rem; background:rgba(15,184,164,.15); border:1px solid rgba(15,184,164,.3); color:var(--teal-lt); padding:4px 12px; border-radius:100px; margin-bottom:1rem; }
 .fa-title { font-family:var(--fh); font-size:clamp(1.4rem,3vw,2.2rem); color:#fff; font-weight:800; line-height:1.1; margin-bottom:.7rem; }
 .fa-tag { font-family:var(--fm); font-size:.62rem; display:inline-block; padding:3px 10px; border-radius:4px; margin-right:8px; margin-bottom:8px; }
 .ft-career { background:rgba(10,122,112,.2); color:var(--teal-lt); }
-.ft-ai { background:rgba(176,56,56,.15); color:#e87070; }
-.ft-job { background:rgba(37,104,56,.15); color:#5fc878; }
-.ft-biz { background:rgba(196,118,14,.15); color:#e8a820; }
 .fa-excerpt { font-size:.88rem; color:rgba(255,255,255,.55); margin-bottom:1.2rem; }
 .fa-read { display:inline-flex; align-items:center; gap:7px; background:var(--teal); color:#fff; padding:9px 20px; border-radius:7px; text-decoration:none; font-weight:700; }
 .article-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:2rem; }
-.art-card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem 1rem 1rem 1rem; transition:transform .2s; box-shadow:var(--sh); display:flex; flex-direction:column; }
+.art-card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem; transition:transform .2s; box-shadow:var(--sh); }
 .art-card:hover { transform:translateY(-4px); box-shadow:var(--sh2); }
 .ac-tags { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:.7rem; }
-.act { font-family:var(--fm); font-size:.6rem; padding:3px 9px; border-radius:4px; font-weight:600; background:rgba(10,122,112,.1); color:var(--teal); }
+.act { font-family:var(--fm); font-size:.6rem; padding:3px 9px; border-radius:4px; background:rgba(10,122,112,.1); color:var(--teal); }
 .ac-title { font-family:var(--fh); font-size:.97rem; font-weight:700; margin-bottom:.4rem; }
-.ac-excerpt { font-size:.77rem; color:var(--muted); line-height:1.78; flex:1; margin-bottom:.8rem; }
-.ac-meta { display:flex; justify-content:space-between; border-top:1px solid var(--border); padding-top:.7rem; margin-top:.2rem; }
+.ac-excerpt { font-size:.77rem; color:var(--muted); line-height:1.78; margin-bottom:.8rem; }
+.ac-meta { display:flex; justify-content:space-between; border-top:1px solid var(--border); padding-top:.7rem; }
 .ac-date { font-family:var(--fm); font-size:.6rem; color:var(--muted); }
 .ac-read { font-size:.72rem; font-weight:700; color:var(--teal); text-decoration:none; }
-.full-article { background:var(--white); border-radius:16px; padding:1.6rem; margin-bottom:2rem; box-shadow:var(--sh); border:1px solid var(--border); }
-.full-article h3 { font-family:var(--fh); font-size:1.35rem; font-weight:800; margin-bottom:.5rem; }
-.art-meta-row { display:flex; gap:12px; margin-bottom:1rem; flex-wrap:wrap; }
-.art-date, .art-author { font-family:var(--fm); font-size:.62rem; color:var(--teal); }
-.art-body { font-size:.86rem; line-height:2; color:#3a3530; }
-.art-body p { margin-bottom:.85rem; }
-.art-body .hl { background:rgba(10,122,112,.08); border-left:3px solid var(--teal); padding:.7rem 1rem; margin:.8rem 0; }
+.job-board { background:var(--white); border-radius:16px; padding:1.6rem; margin-bottom:2rem; border:1px solid var(--border); }
+.job-list { display:flex; flex-direction:column; gap:12px; margin-bottom:1rem; }
+.job-item { background:var(--bg); border-left:3px solid var(--teal); border-radius:10px; padding:.8rem 1rem; }
+.ji-title { font-weight:700; font-size:.87rem; }
+.ji-details { font-size:.75rem; color:var(--muted); }
 .art-cta { background:var(--ink); border-radius:10px; padding:1rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:1rem; align-items:center; }
 .art-cta-text { font-size:.8rem; color:rgba(255,255,255,.55); }
 .btn-sm { display:inline-flex; align-items:center; gap:5px; padding:7px 14px; border-radius:6px; font-size:.76rem; font-weight:700; text-decoration:none; }
 .btn-teal { background:var(--teal); color:#fff; }
 .btn-wa { background:#25d366; color:#fff; }
-.job-board { background:var(--white); border-radius:16px; padding:1.6rem; margin-bottom:2.5rem; border:1px solid var(--border); }
-.jb-header { display:flex; justify-content:space-between; margin-bottom:1.2rem; }
-.jb-badge { font-family:var(--fm); font-size:.6rem; background:rgba(37,104,56,.1); border:1px solid rgba(37,104,56,.2); color:var(--green); padding:3px 11px; border-radius:100px; }
-.job-list { display:flex; flex-direction:column; gap:12px; margin-bottom:1.2rem; }
-.job-item { background:var(--bg); border-left:3px solid var(--teal); border-radius:10px; padding:.8rem 1rem; }
-.ji-title { font-weight:700; font-size:.87rem; }
-.ji-badge { font-family:var(--fm); font-size:.59rem; padding:2px 8px; border-radius:4px; background:rgba(10,122,112,.1); color:var(--teal); }
-.ji-company { font-family:var(--fm); font-size:.63rem; color:var(--teal); margin:.2rem 0; }
-.ji-details { font-size:.75rem; color:var(--muted); }
-.affiliate-section { background:linear-gradient(135deg,#1a1820,#0e1a16); border-radius:16px; padding:1.6rem; margin-bottom:2rem; }
-.aff-title { font-family:var(--fh); font-size:1.15rem; color:#fff; font-weight:700; }
-.aff-desc { font-size:.78rem; color:rgba(255,255,255,.42); margin:.3rem 0 1rem; }
-.aff-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-.aff-card { background:rgba(255,255,255,.04); border-radius:10px; padding:.9rem; }
-.aff-card-name { font-weight:700; font-size:.83rem; color:#fff; }
-.aff-card-desc { font-size:.72rem; color:rgba(255,255,255,.38); margin:.3rem 0; }
-.aff-card-link { font-size:.71rem; font-weight:700; color:#9b8ff0; text-decoration:none; display:inline-block; border:1px solid rgba(80,64,184,.3); padding:4px 11px; border-radius:5px; }
 .sidebar { display:flex; flex-direction:column; gap:20px; }
 .sidebar-card { background:var(--card); border-radius:14px; padding:1.2rem; border:1px solid var(--border); }
 .sb-title { font-family:var(--fh); font-size:1rem; font-weight:700; margin-bottom:1rem; }
@@ -117,15 +165,10 @@ h2.sec-title span { color:var(--teal); }
 .sb-cl { display:flex; align-items:center; gap:9px; padding:9px 12px; border-radius:8px; text-decoration:none; font-weight:600; font-size:.8rem; }
 .sb-cl-call { background:var(--teal); color:#fff; }
 .sb-cl-wa { background:#25d366; color:#fff; }
-.sb-cats { display:flex; flex-direction:column; gap:7px; }
-.sb-cat { display:flex; justify-content:space-between; background:var(--bg); border:1px solid var(--border); border-radius:7px; padding:.5rem .8rem; text-decoration:none; color:var(--ink); font-size:.8rem; }
 .bpl-sidebar { background:linear-gradient(135deg,#0a7a70,#256838); border-radius:14px; padding:1.2rem; color:#fff; }
-.bpl-sb-title { font-family:var(--fh); font-size:.95rem; font-weight:700; }
-.bpl-sb-desc { font-size:.75rem; margin:.5rem 0; opacity:.8; }
 .bpl-sb-btn { background:rgba(255,255,255,.2); color:#fff; padding:7px 14px; border-radius:6px; text-decoration:none; display:inline-block; font-size:.76rem; }
 .subscribe-bar { background:var(--ink); padding:40px 4%; text-align:center; }
 .sub-title { font-family:var(--fh); font-size:1.6rem; color:#fff; }
-.sub-desc { color:rgba(255,255,255,.45); margin:1rem 0; }
 .sub-form { display:flex; gap:10px; max-width:480px; margin:0 auto; flex-wrap:wrap; justify-content:center; }
 .sub-input { flex:1; padding:11px 15px; border-radius:8px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.07); color:#fff; }
 .sub-btn { background:var(--teal); color:#fff; border:none; padding:11px 22px; border-radius:8px; font-weight:700; cursor:pointer; }
@@ -133,86 +176,70 @@ h2.sec-title span { color:var(--teal); }
 .links-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
 .link-card { background:var(--card); border-radius:10px; padding:.8rem; text-decoration:none; display:block; border:1px solid var(--border); }
 .lc-name { font-weight:700; font-size:.8rem; color:var(--ink); }
-/* BACKLINKS TOOL SECTION (merged) */
-.backlink-tool-section { background: #0c2f2a; border-radius: 24px; margin: 2rem 0 2.5rem; padding: 1.8rem; color: white; box-shadow: 0 12px 28px rgba(0,0,0,0.2); }
-.backlink-header-tool { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
-.backlink-header-tool h3 { font-family: var(--fh); font-size: 1.5rem; }
-.tool-sub { font-size: 0.7rem; color: #8bc9bf; margin-top: 4px; }
-.toolbar-back { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; margin: 1rem 0 1rem; align-items: center; }
-.search-back { background: rgba(255,255,255,0.12); border-radius: 48px; padding: 6px 16px; display: flex; align-items: center; gap: 8px; }
-.search-back input { background: transparent; border: none; padding: 6px; color: white; width: 200px; outline: none; }
-.filter-group-back { display: flex; gap: 8px; flex-wrap: wrap; }
-.filter-btn-back { background: #1f554c; border: none; padding: 6px 14px; border-radius: 30px; color: white; cursor: pointer; font-size: 0.7rem; }
-.filter-btn-back.active { background: #0fb8a4; color: #0c1f1c; font-weight: bold; }
-.backlink-grid-seo { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 1rem; max-height: 550px; overflow-y: auto; padding-right: 5px; }
-.backlink-card-seo { background: rgba(255,255,255,0.07); border-radius: 16px; padding: 0.8rem; backdrop-filter: blur(2px); border: 1px solid rgba(255,255,255,0.1); transition: 0.2s; }
-.backlink-card-seo:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
-.site-name-seo { font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.da-badge-seo { background: #0a7a70; padding: 2px 8px; border-radius: 30px; font-size: 0.65rem; }
-.site-url-seo { font-size: 0.7rem; color: #bdd4cf; word-break: break-all; margin: 6px 0; font-family: monospace; }
-.btn-visit-seo { background: #0fb8a4; color: #141210; border: none; border-radius: 40px; padding: 5px 12px; font-size: 0.7rem; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; margin-right: 8px; }
-.copy-link-seo { background: #2c5a52; border: none; border-radius: 40px; padding: 5px 12px; font-size: 0.7rem; cursor: pointer; color: white; }
-.pagination-seo { display: flex; justify-content: center; gap: 8px; margin-top: 1.5rem; flex-wrap: wrap; }
-.page-btn-seo { background: #1f554c; border: none; padding: 5px 12px; border-radius: 30px; color: white; cursor: pointer; }
-.result-count-seo { font-size: 0.75rem; background: #1f554c; display: inline-block; padding: 4px 12px; border-radius: 40px; }
-footer { background: var(--ink2); padding: 2rem 4%; text-align:center; color: rgba(255,255,255,0.3); }
+footer { background:var(--ink2); padding:2rem 4%; text-align:center; color:rgba(255,255,255,.3); }
 .fbtn { position:fixed; bottom:20px; right:20px; background:#25d366; color:#fff; padding:10px 18px; border-radius:100px; text-decoration:none; font-weight:700; display:flex; align-items:center; gap:6px; z-index:999; }
-@media (max-width:960px) { .blog-layout { grid-template-columns:1fr; } .sidebar { display:none; } .article-grid { grid-template-columns:1fr; } .links-grid { grid-template-columns:1fr 1fr; } .backlink-grid-seo { max-height: 450px; } }
-@media (max-width:600px) { .links-grid { grid-template-columns:1fr; } .aff-grid { grid-template-columns:1fr; } }
+@media (max-width:960px) { .blog-layout { grid-template-columns:1fr; } .sidebar { display:none; } .article-grid { grid-template-columns:1fr; } .links-grid { grid-template-columns:1fr 1fr; } }
 </style>
 </head>
 <body>
 <div class="sticky-contact-bar" id="stickyBar"><div class="scb-inner"><div class="scb-left"><span class="scb-name">Syed Hilaluddin Madany — Fatehpur, UP</span><span class="scb-tag">MEP Consultant · AI Coach · BPL FREE</span></div><div class="scb-right"><a href="tel:+919650329719" class="scb-btn scb-call">📞 +91 96503 29719</a><a href="https://wa.me/919650329719" target="_blank" class="scb-btn scb-wa">💬 WhatsApp</a><a href="/" class="scb-btn scb-home">🏠 Main Site</a><button class="scb-close" onclick="document.getElementById('stickyBar').style.display='none'">✕</button></div></div></div>
-<nav class="blog-nav"><a href="/" class="logo">Hilal<em>Madany</em></a><ul class="nav-menu"><li><a href="/blog.html" class="active">Blog</a></li><li><a href="#careers">Careers</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#ai-tech">AI & Tech</a></li><li><a href="#business">Business</a></li><li><a href="#affiliate">Affiliate</a></li><li><a href="#students">Students</a></li><li><a href="#seo-tool">Backlinks</a></li><li><a href="#contact" class="nav-btn">Contact</a></li></ul></nav>
-<section class="blog-hero"><div class="bh-inner"><span class="bh-label">📘 hilalmadany.com/blog — Fatehpur, Uttar Pradesh</span><h1 class="bh-title">Knowledge That<br><em>Actually Helps</em></h1><p class="bh-sub">Engineering careers, AI technology, new job alerts, ITI & Diploma guidance, Gulf job reality, business startups, affiliate marketing — written from Fatehpur, UP for India & the world. Hindi & English. BPL students free coaching.</p><div class="bh-pills"><span class="bh-pill active">All Posts</span><a href="#careers" class="bh-pill">Career Guidance</a><a href="#jobs" class="bh-pill">Job Alerts</a><a href="#ai-tech" class="bh-pill">AI & Tech</a><a href="#business" class="bh-pill">Startups</a><a href="#affiliate" class="bh-pill">Affiliate</a><a href="#students" class="bh-pill">School Q&A</a><a href="#seo-tool" class="bh-pill">🔗 SEO Backlink Tool</a></div></div></section>
+<nav class="blog-nav"><a href="/" class="logo">Hilal<em>Madany</em></a><ul class="nav-menu"><li><a href="/blog.html" class="active">Blog</a></li><li><a href="#careers">Careers</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#ai-tech">AI & Tech</a></li><li><a href="#business">Business</a></li><li><a href="#students">Students</a></li><li><a href="#contact" class="nav-btn">Contact</a></li></ul></nav>
+<section class="blog-hero"><div class="bh-inner"><span class="bh-label">📘 hilalmadany.com/blog — Fatehpur, Uttar Pradesh</span><h1 class="bh-title">Knowledge That<br><em>Actually Helps</em></h1><p class="bh-sub">Engineering careers, AI technology, new job alerts, ITI & Diploma guidance, Gulf job reality, business startups, affiliate marketing — written from Fatehpur, UP for India & the world.</p><div class="bh-pills"><span class="bh-pill active">All Posts</span><a href="#careers" class="bh-pill">Career Guidance</a><a href="#jobs" class="bh-pill">Job Alerts</a><a href="#ai-tech" class="bh-pill">AI & Tech</a><a href="#business" class="bh-pill">Startups</a><a href="#students" class="bh-pill">School Q&A</a></div></div></section>
 <div class="blog-layout"><main>
-  <div class="featured-article"><div class="fa-badge">🔥 FEATURED — MUST READ</div><h2 class="fa-title">ITI के बाद Gulf Job कैसे मिलती है — Real Guide 2025</h2><div><span class="fa-tag ft-career">Gulf Jobs</span><span class="fa-tag ft-job">ITI/Diploma</span></div><p class="fa-excerpt">Saudi Arabia, UAE, Qatar — real salary, visa process, agencies vs direct. Complete roadmap for Fatehpur, UP candidates. Free counselling for BPL students.</p><a href="#iti-gulf" class="fa-read">Read Full Guide →</a></div>
-
-  <!-- BACKLINK SEO TOOL (MERGED) -->
-  <div id="seo-tool" class="backlink-tool-section">
-    <div class="backlink-header-tool"><div><h3>📡 Hilal's Backlink Power Vault</h3><div class="tool-sub">High DA Classified Sites | Build Authority for hilalmadany.com</div></div><div class="result-count-seo" id="resultCountSeo">Loading sites...</div></div>
-    <div class="toolbar-back"><div class="search-back">🔍 <input type="text" id="searchInputSeo" placeholder="Search site..."></div><div class="filter-group-back"><button class="filter-btn-back active" data-filter="all">All</button><button class="filter-btn-back" data-filter="high">High DA (50+)</button><button class="filter-btn-back" data-filter="india">India Focus</button><button class="filter-btn-back" data-filter="gulf">Gulf/UAE</button></div></div>
-    <div class="guide-note" style="background:#1d4a42; border-left-color:#0fb8a4; margin-bottom:1rem; padding:0.7rem 1rem;">💡 <strong>SEO Strategy:</strong> Click "Visit & Submit" → Post genuine ad (career guidance/MEP consulting) → Add URL <strong>https://www.hilalmadany.com</strong> → 5-10 posts/week. No spam.</div>
-    <div id="backlinkGridSeo" class="backlink-grid-seo"></div>
-    <div id="paginationSeo" class="pagination-seo"></div>
+  
+  <!-- ✅ VISIBLE SEO STRATEGY BOX - NOW SHOWS ON WEBSITE ✅ -->
+  <div class="seo-strategy-box">
+    <h3>SEO Strategy — How to Build Backlinks</h3>
+    <div class="seo-strategy-content">
+      <div class="seo-steps">
+        <div class="seo-step"><span class="seo-step-num">1</span> Click <strong>"Visit & Submit"</strong> on any site below</div>
+        <div class="seo-step"><span class="seo-step-num">2</span> Post genuine ad (Career Guidance / MEP Consulting / AI Training)</div>
+        <div class="seo-step"><span class="seo-step-num">3</span> Add your URL: <strong style="color:#0fb8a4;">https://www.hilalmadany.com</strong></div>
+        <div class="seo-step"><span class="seo-step-num">4</span> Post <strong>5-10 ads per week</strong> — consistency is key!</div>
+      </div>
+      <div class="seo-url-box">
+        📌 Your URL to add everywhere:<br>
+        <strong style="font-size:1rem;">https://www.hilalmadany.com</strong>
+      </div>
+    </div>
+    <div class="seo-warning">
+      ⚠️ NO SPAM — Always add value. Genuine posts get approved and last longer. Quality > Quantity.
+    </div>
   </div>
 
-  <div id="careers"><span class="sec-label">🎯 CAREER BLUEPRINT</span><h2 class="sec-title">Engineering & <span>ITI/Diploma</span> Guidance</h2><div class="article-grid"><div class="art-card"><div class="ac-tags"><span class="act">HVAC</span></div><div class="ac-title">HVAC Engineer Jobs India 2025 — Salary, Companies</div><div class="ac-excerpt">Top MEP firms hiring in Noida, Gurgaon, Pune. Fresher to experienced.</div><div class="ac-meta"><span class="ac-date">📅 15 Feb 2025</span><a href="#hvac-article" class="ac-read">Read →</a></div></div><div class="art-card"><div class="ac-tags"><span class="act">Diploma</span></div><div class="ac-title">Diploma vs B.Tech after 10th? Reality & Salary</div><div class="ac-excerpt">Government polytechnic, lateral entry, high-demand trades 2025.</div><div class="ac-meta"><span class="ac-date">📅 5 Mar 2025</span><a href="#diploma-btech" class="ac-read">Read →</a></div></div><div class="art-card"><div class="ac-tags"><span class="act">Gulf Reality</span></div><div class="ac-title">Saudi Arabia Jobs for ITI Fitter — Real Contract Tips</div><div class="ac-excerpt">Hidden charges, free visa vs paid, what Gulf companies expect.</div><div class="ac-meta"><span class="ac-date">📅 20 Mar 2025</span><a href="#gulf-reality" class="ac-read">Read →</a></div></div><div class="art-card"><div class="ac-tags"><span class="act">Facility Management</span></div><div class="ac-title">FM Industry Boom in India: 12,000+ Jobs</div><div class="ac-excerpt">Soft services, technical staff, BMS operator roles. Certification guide.</div><div class="ac-meta"><span class="ac-date">📅 1 Apr 2025</span><a href="#fm-jobs" class="ac-read">Read →</a></div></div></div></div>
-  <div id="jobs" class="job-board"><div class="jb-header"><h3 style="font-family:var(--fh);">📢 Active Job Alerts 2025</h3><div class="jb-badge">🟢 Updated Weekly</div></div><div class="job-list"><div class="job-item"><div class="ji-top"><span class="ji-title">HVAC Technician (AC & Refrigeration)</span><span class="ji-badge">Gulf/India</span></div><div class="ji-company">📍 Saudi Arabia & Delhi NCR</div><div class="ji-details">ITI/Diploma | 2-5 yrs | Salary: 1800-2500 SAR</div></div><div class="job-item"><div class="ji-top"><span class="ji-title">MEP Supervisor — Facility Management</span><span class="ji-badge">🔥 Urgent</span></div><div class="ji-company">📍 Lucknow + Mumbai</div><div class="ji-details">Diploma Mech/Electrical | 3+ years | Up to ₹45k/month</div></div></div><div class="art-cta"><div class="art-cta-text"><strong>Need help applying?</strong> Call or WhatsApp for resume review.</div><div class="art-cta-btns"><a href="https://wa.me/919650329719" class="btn-sm btn-wa">📲 Ask on WhatsApp</a></div></div></div>
-  <div id="ai-tech"><span class="sec-label">🤖 AI & FUTURE TECH</span><h2 class="sec-title">Artificial Intelligence <span>for Students</span></h2><div class="article-grid"><div class="art-card"><div class="ac-tags"><span class="act">AI Basics</span></div><div class="ac-title">AI क्या है? Class 6-10 Students Guide</div><div class="ac-excerpt">No coding needed: How AI works, ChatGPT, image generation.</div><div class="ac-meta"><span class="ac-date">📅 1 Feb 2025</span><a href="#ai-guide" class="ac-read">Read →</a></div></div><div class="art-card"><div class="ac-tags"><span class="act">Automation</span></div><div class="ac-title">Automation Will Replace Which Jobs? (5 New Roles)</div><div class="ac-excerpt">Data annotation, prompt engineering for beginners.</div><div class="ac-meta"><span class="ac-date">📅 10 Mar 2025</span><a href="#automation" class="ac-read">Read →</a></div></div></div></div>
-  <div id="students"><span class="sec-label">🎓 SCHOOL STUDENTS Q&A</span><h2 class="sec-title">Class 6–12: <span>Career, Maths & Future</span></h2><div class="full-article"><h3>📌 "Which subject after 10th?" — Answer by Hilal Sir</h3><div class="art-body"><p>If you love machines → ITI (Fitter/Electrician). If you want degree → 11th Science.</p><div class="hl">💡 Free Maths & Science coaching every Sunday for BPL families in Fatehpur. Contact +91 96503 29719.</div></div><div class="art-cta"><div class="art-cta-text"><strong>📞 BPL Students FREE Coaching</strong></div><a href="tel:+919650329719" class="btn-sm btn-teal">Call for time slot</a></div></div></div>
+  <div class="featured-article"><div class="fa-badge">🔥 FEATURED — MUST READ</div><h2 class="fa-title">ITI के बाद Gulf Job कैसे मिलती है — Real Guide 2025</h2><div><span class="fa-tag ft-career">Gulf Jobs</span></div><p class="fa-excerpt">Saudi Arabia, UAE, Qatar — real salary, visa process, agencies vs direct. Complete roadmap for Fatehpur, UP candidates. Free counselling for BPL students.</p><a href="#" class="fa-read">Read Full Guide →</a></div>
+
+  <div id="careers"><span class="sec-label">🎯 CAREER BLUEPRINT</span><h2 class="sec-title">Engineering & <span>ITI/Diploma</span> Guidance</h2><div class="article-grid">
+    <div class="art-card"><div class="ac-tags"><span class="act">HVAC</span></div><div class="ac-title">HVAC Engineer Jobs India 2025 — Salary, Companies</div><div class="ac-excerpt">Top MEP firms hiring in Noida, Gurgaon, Pune. Fresher to experienced.</div><div class="ac-meta"><span class="ac-date">📅 15 Feb 2025</span><a href="#" class="ac-read">Read →</a></div></div>
+    <div class="art-card"><div class="ac-tags"><span class="act">Diploma</span></div><div class="ac-title">Diploma vs B.Tech after 10th? Reality & Salary</div><div class="ac-excerpt">Government polytechnic, lateral entry, high-demand trades 2025.</div><div class="ac-meta"><span class="ac-date">📅 5 Mar 2025</span><a href="#" class="ac-read">Read →</a></div></div>
+    <div class="art-card"><div class="ac-tags"><span class="act">Gulf Reality</span></div><div class="ac-title">Saudi Arabia Jobs for ITI Fitter — Real Contract Tips</div><div class="ac-excerpt">Hidden charges, free visa vs paid, what Gulf companies expect.</div><div class="ac-meta"><span class="ac-date">📅 20 Mar 2025</span><a href="#" class="ac-read">Read →</a></div></div>
+    <div class="art-card"><div class="ac-tags"><span class="act">Facility Management</span></div><div class="ac-title">FM Industry Boom in India: 12,000+ Jobs</div><div class="ac-excerpt">Soft services, technical staff, BMS operator roles. Certification guide.</div><div class="ac-meta"><span class="ac-date">📅 1 Apr 2025</span><a href="#" class="ac-read">Read →</a></div></div>
+  </div></div>
+
+  <div id="jobs" class="job-board"><div class="jb-header"><h3 style="font-family:var(--fh);">📢 Active Job Alerts 2025</h3></div><div class="job-list">
+    <div class="job-item"><div class="ji-title">HVAC Technician (AC & Refrigeration)</div><div class="ji-details">📍 Saudi Arabia & Delhi NCR | ITI/Diploma | Salary: 1800-2500 SAR</div></div>
+    <div class="job-item"><div class="ji-title">MEP Supervisor — Facility Management 🔥 Urgent</div><div class="ji-details">📍 Lucknow + Mumbai | Diploma | Up to ₹45k/month</div></div>
+  </div><div class="art-cta"><div class="art-cta-text"><strong>Need help applying?</strong> Call or WhatsApp for resume review.</div><div class="art-cta-btns"><a href="https://wa.me/919650329719" class="btn-sm btn-wa">📲 Ask on WhatsApp</a></div></div></div>
+
+  <div id="ai-tech"><span class="sec-label">🤖 AI & FUTURE TECH</span><h2 class="sec-title">Artificial Intelligence <span>for Students</span></h2><div class="article-grid">
+    <div class="art-card"><div class="ac-tags"><span class="act">AI Basics</span></div><div class="ac-title">AI क्या है? Class 6-10 Students Guide</div><div class="ac-excerpt">No coding needed: How AI works, ChatGPT, image generation.</div><div class="ac-meta"><span class="ac-date">📅 1 Feb 2025</span><a href="#" class="ac-read">Read →</a></div></div>
+    <div class="art-card"><div class="ac-tags"><span class="act">Automation</span></div><div class="ac-title">Automation Will Replace Which Jobs? (5 New Roles)</div><div class="ac-excerpt">Data annotation, prompt engineering for beginners.</div><div class="ac-meta"><span class="ac-date">📅 10 Mar 2025</span><a href="#" class="ac-read">Read →</a></div></div>
+  </div></div>
+
+  <div id="students"><span class="sec-label">🎓 SCHOOL STUDENTS Q&A</span><h2 class="sec-title">Class 6–12: <span>Career, Maths & Future</span></h2><div class="art-cta" style="background:var(--white); border:1px solid var(--border);"><div class="art-cta-text" style="color:var(--ink);"><strong>📞 BPL Students FREE Coaching</strong> — Maths, Science, AI basics, Resume building</div><a href="tel:+919650329719" class="btn-sm btn-teal">Call for time slot</a></div></div>
 </main>
-<aside class="sidebar">...</aside></div>
-<script>
-  // BACKLINK DATASET
-  const sitesData = [
-    {name:"Amazon",url:"https://amazon.com",da:96,region:"global"},{name:"USAToday Classifieds",url:"https://classifieds.usatoday.com",da:94,region:"usa"},{name:"eBay",url:"https://ebay.com",da:93,region:"global"},{name:"Craigslist Delhi",url:"https://delhi.craigslist.org",da:89,region:"india"},{name:"Craigslist Dubai",url:"https://dubai.craigslist.org",da:89,region:"gulf"},{name:"Buzzon Khaleej Times",url:"https://buzzon.khaleejtimes.com",da:87,region:"gulf"},{name:"Sify",url:"https://sify.com",da:87,region:"india"},{name:"Jagran Classifieds",url:"https://classifieds.jagran.com",da:83,region:"india"},{name:"Sulekha Classifieds",url:"https://classifieds.sulekha.com",da:78,region:"india"},{name:"IndiaMART",url:"https://indiamart.com",da:74,region:"india"},{name:"OLX India",url:"https://olx.in",da:61,region:"india"},{name:"Dubizzle UAE",url:"https://dubai.dubizzle.com",da:61,region:"gulf"},{name:"Quikr",url:"https://quikr.com",da:60,region:"india"},{name:"ClickIndia",url:"https://clickindia.com",da:47,region:"india"},{name:"Locanto India",url:"https://locanto.in",da:37,region:"india"},{name:"YellowPages UAE",url:"https://yellowpages.ae",da:39,region:"gulf"},{name:"Expatriates",url:"https://expatriates.com",da:56,region:"gulf"},{name:"AdPost",url:"https://adpost.com",da:54,region:"global"},{name:"Storeboard",url:"https://storeboard.com",da:62,region:"global"}
-  ];
-  let currentPageSeo=1, currentFilterSeo="all", searchQuerySeo="";
-  const itemsPerPageSeo=18;
-  function filterSitesSeo(){ return sitesData.filter(s=>{ if(currentFilterSeo!=="all"){ if(currentFilterSeo==="high" && s.da<50) return false; if(currentFilterSeo==="india" && s.region!=="india") return false; if(currentFilterSeo==="gulf" && s.region!=="gulf") return false; } if(searchQuerySeo.trim()){ let q=searchQuerySeo.toLowerCase(); return s.name.toLowerCase().includes(q)||s.url.toLowerCase().includes(q); } return true; }).sort((a,b)=>b.da-a.da); }
-  function renderSeo(){
-    let filtered=filterSitesSeo(); let totalPages=Math.ceil(filtered.length/itemsPerPageSeo); let start=(currentPageSeo-1)*itemsPerPageSeo; let paginated=filtered.slice(start,start+itemsPerPageSeo);
-    let grid=document.getElementById("backlinkGridSeo"); document.getElementById("resultCountSeo").innerHTML=`📋 ${filtered.length} backlink sources`;
-    if(paginated.length===0){grid.innerHTML="<div style='text-align:center;padding:2rem'>No results</div>";return;}
-    grid.innerHTML=paginated.map(s=>`<div class="backlink-card-seo"><div class="site-name-seo">🌐 ${s.name}<span class="da-badge-seo">DA ${s.da}</span></div><div class="site-url-seo">${s.url}</div><div><a href="${s.url}" target="_blank" rel="noopener" class="btn-visit-seo">🔗 Visit & Submit</a><button class="copy-link-seo" data-url="${s.url}">📋 Copy URL</button></div></div>`).join("");
-    let pagHtml=``; for(let i=1;i<=Math.min(totalPages,8);i++) pagHtml+=`<button class="page-btn-seo ${currentPageSeo===i?'active':''}" data-page="${i}">${i}</button>`;
-    document.getElementById("paginationSeo").innerHTML=`<button class="page-btn-seo" data-page="prev" ${currentPageSeo===1?'disabled':''}>‹ Prev</button>${pagHtml}<button class="page-btn-seo" data-page="next" ${currentPageSeo===totalPages?'disabled':''}>Next ›</button>`;
-    document.querySelectorAll(".copy-link-seo").forEach(btn=>btn.addEventListener("click",(e)=>{ navigator.clipboard.writeText(btn.dataset.url); btn.textContent="✓ Copied!"; setTimeout(()=>btn.textContent="📋 Copy URL",1500); }));
-  }
-  function setupSeo(){
-    document.querySelectorAll(".filter-btn-back").forEach(btn=>btn.addEventListener("click",()=>{ document.querySelectorAll(".filter-btn-back").forEach(b=>b.classList.remove("active")); btn.classList.add("active"); currentFilterSeo=btn.dataset.filter; currentPageSeo=1; renderSeo(); }));
-    document.getElementById("searchInputSeo").addEventListener("input",(e)=>{ searchQuerySeo=e.target.value; currentPageSeo=1; renderSeo(); });
-    document.getElementById("paginationSeo").addEventListener("click",(e)=>{ let btn=e.target.closest(".page-btn-seo"); if(!btn) return; let total=Math.ceil(filterSitesSeo().length/itemsPerPageSeo); if(btn.dataset.page==="prev" && currentPageSeo>1) currentPageSeo--; else if(btn.dataset.page==="next" && currentPageSeo<total) currentPageSeo++; else if(!isNaN(btn.dataset.page)) currentPageSeo=parseInt(btn.dataset.page); renderSeo(); });
-    renderSeo();
-  }
-  setupSeo();
-  document.querySelectorAll('.bh-pill, .nav-menu a[href^="#"], .sb-cat, .fa-read, .ac-read, .aff-card-link, .bpl-sb-btn').forEach(link => { link.addEventListener('click', function(e) { let href = this.getAttribute('href'); if (href && href.startsWith('#')) { e.preventDefault(); let targetId = href.substring(1); let target = document.getElementById(targetId); if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
-  document.querySelector('.sub-form')?.addEventListener('submit', (e) => { e.preventDefault(); alert('✅ Thank you! You will receive career updates. +91 96503 29719 for instant help.'); });
-</script>
+<aside class="sidebar">
+  <div class="sidebar-card sb-contact-card"><div class="sb-title">📞 Direct Contact</div><div class="sb-clinks"><a href="tel:+919650329719" class="sb-cl sb-cl-call">📱 +91 96503 29719</a><a href="https://wa.me/919650329719" class="sb-cl sb-cl-wa">💬 WhatsApp: Career queries</a></div></div>
+  <div class="sidebar-card"><div class="sb-title">📚 Browse by Topic</div><div class="sb-cats"><a href="#careers" class="sb-cat">🔧 Engineering / ITI / Diploma</a><a href="#jobs" class="sb-cat">💼 New Jobs 2025</a><a href="#ai-tech" class="sb-cat">🧠 AI & Technology</a></div></div>
+  <div class="bpl-sidebar"><div class="bpl-sb-title">🎓 BPL Students Free Coaching</div><div class="bpl-sb-desc">For low-income families in Fatehpur district.</div><a href="tel:+919650329719" class="bpl-sb-btn">📞 Register Free →</a></div>
+</aside>
+</div>
 <div class="subscribe-bar"><div class="sub-title">Get Job Alerts & Career Tips</div><div class="sub-desc">Weekly updates on Gulf jobs, AI trends, and free coaching events.</div><form class="sub-form"><input type="email" placeholder="Your email address" class="sub-input" required><button type="submit" class="sub-btn">Subscribe →</button></form></div>
-<div class="links-section"><div class="links-inner"><div class="links-title">🔗 RESOURCE HUB</div><div class="links-grid"><a href="https://www.accumentechno.com" target="_blank" class="link-card"><div class="lc-name">Accumen Techno Solutions</div></a><a href="/" class="link-card"><div class="lc-name">Hilal Madany Official</div></a><a href="#careers" class="link-card"><div class="lc-name">ITI Gulf Job Guide</div></a><a href="#seo-tool" class="link-card"><div class="lc-name">SEO Backlink Vault</div></a></div></div></div>
+<div class="links-section"><div class="links-inner"><div class="links-title">🔗 RESOURCE HUB — hilalmadany.com network</div><div class="links-grid"><a href="https://www.accumentechno.com" target="_blank" class="link-card"><div class="lc-name">Accumen Techno Solutions</div></a><a href="/" class="link-card"><div class="lc-name">Hilal Madany Official</div></a><a href="#careers" class="link-card"><div class="lc-name">ITI Gulf Job Guide</div></a></div></div></div>
 <footer><div class="fi"><div class="flogo">Hilal<em>Madany</em> — Fatehpur UP</div><div class="floc">📍 Haswa & Chak Korra Sadat, Fatehpur, UP 212601</div></div><div class="fcopy">© 2025 Syed Hilaluddin Madany. Free career guidance for BPL families. +91 96503 29719</div></footer>
 <a href="https://wa.me/919650329719" class="fbtn">💬 WhatsApp Query</a>
+<script>
+document.querySelector('.sub-form')?.addEventListener('submit', (e) => { e.preventDefault(); alert('✅ Thank you! You will receive career updates.'); });
+</script>
 </body>
 </html>
