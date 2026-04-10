@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Backlink Tools | Hilal Madany | Fatehpur UP</title>
+  <meta name="description" content="High DA classified submission sites list for SEO — Free tool by Hilal Madany, Fatehpur UP">
+  <meta name="robots" content="noindex, follow">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#f7f5f0;font-family:'Segoe UI',system-ui;color:#1e1a15;padding:0 0 2rem;}
+    .header{background:#0c2f2a;color:white;padding:1.2rem 5%;position:sticky;top:0;z-index:100;}
+    .header h1{font-size:1.3rem;}
+    .header p{font-size:0.7rem;color:#8bc9bf;margin-top:4px;}
+    .toolbar{max-width:1400px;margin:1rem auto 0;padding:0 5%;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;}
+    .search-box{background:rgba(255,255,255,0.12);border-radius:48px;padding:6px 16px;}
+    .search-box input{background:transparent;border:none;padding:6px;color:white;width:200px;outline:none;}
+    .filter-group{display:flex;gap:8px;flex-wrap:wrap;}
+    .filter-btn{background:#1f554c;border:none;padding:6px 14px;border-radius:30px;color:white;cursor:pointer;font-size:0.7rem;}
+    .filter-btn.active{background:#0fb8a4;color:#0c1f1c;font-weight:bold;}
+    .guide-note{background:#fff9e8;border-left:5px solid #c4760e;max-width:1400px;margin:1.5rem auto;padding:1rem 1.5rem;border-radius:12px;font-size:0.8rem;}
+    .container{max-width:1400px;margin:0 auto;padding:0 5%;}
+    .stats-row{display:flex;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;}
+    .result-count{background:#e5e0d8;padding:4px 14px;border-radius:40px;font-size:0.75rem;}
+    .backlink-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;}
+    .card{background:white;border-radius:16px;padding:0.9rem;border:1px solid #e9e2d8;transition:0.2s;}
+    .card:hover{transform:translateY(-3px);box-shadow:0 10px 20px -10px rgba(0,0,0,0.1);}
+    .site-name{font-weight:700;font-size:0.85rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .da-badge{background:#eef2f0;padding:2px 8px;border-radius:30px;font-size:0.65rem;}
+    .site-url{font-size:0.7rem;color:#6b5e4f;word-break:break-all;margin:6px 0;}
+    .btn-visit{background:#0a7a70;color:white;border:none;border-radius:40px;padding:5px 12px;font-size:0.7rem;cursor:pointer;text-decoration:none;display:inline-block;margin-right:8px;}
+    .copy-link{background:#e5dfd7;border:none;border-radius:40px;padding:5px 12px;font-size:0.7rem;cursor:pointer;}
+    .pagination{display:flex;justify-content:center;gap:8px;margin-top:2rem;flex-wrap:wrap;}
+    .page-btn{background:white;border:1px solid #ddd2c4;padding:6px 14px;border-radius:30px;cursor:pointer;font-size:0.7rem;}
+    .page-btn.active-page{background:#0a7a70;color:white;}
+    footer{text-align:center;margin-top:2.5rem;font-size:0.7rem;color:#8c7c6b;border-top:1px solid #e0d6cc;padding-top:1.5rem;}
+    @media(max-width:700px){.toolbar{flex-direction:column;align-items:stretch;}}
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1>📡 Hilal Madany · Backlink Power Vault</h1>
+  <p>High DA Classified Sites | SEO Tool for hilalmadany.com & accumentechno.com</p>
+</div>
+<div class="toolbar">
+  <div class="search-box">🔍 <input type="text" id="searchInput" placeholder="Search site..."></div>
+  <div class="filter-group">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="high">High DA (50+)</button>
+    <button class="filter-btn" data-filter="india">India Focus</button>
+    <button class="filter-btn" data-filter="gulf">Gulf/UAE</button>
+  </div>
+</div>
+<div class="container">
+  <div class="guide-note">
+    💡 <strong>How to Use:</strong> Click "Visit & Submit" → Create genuine ad for your engineering/career services → Add URL <strong>https://www.hilalmadany.com</strong> → Post 5-10 per week. Never spam. Focus on DA 40+ first.
+  </div>
+  <div class="stats-row">
+    <div class="result-count" id="resultCount">Loading...</div>
+    <div style="font-size:0.7rem;">🔗 Updated 2025 | Manual curation</div>
+  </div>
+  <div id="backlinkGrid" class="backlink-grid"></div>
+  <div id="paginationControls" class="pagination"></div>
+</div>
+<footer>
+<a href="/seo-tools.html" style="color:rgba(255,255,255,0.3);">SEO Resources</a>
+  🧠 Curated by Syed Hilaluddin Madany (Fatehpur, UP) — Free for personal SEO use.<br>
+  📞 +91 96503 29719 | 📧 syed.madany86@gmail.com
+</footer>
+<script>
+const sitesData = [
+  {name:"Amazon",url:"https://amazon.com",da:96,pa:90,region:"global"},
+  {name:"USAToday Classifieds",url:"https://classifieds.usatoday.com",da:94,pa:66,region:"usa"},
+  {name:"eBay",url:"https://ebay.com",da:93,pa:80,region:"global"},
+  {name:"Jobs Economist",url:"https://jobs.economist.com",da:93,pa:83,region:"global"},
+  {name:"Craigslist Delhi",url:"https://delhi.craigslist.org",da:89,pa:58,region:"india"},
+  {name:"Craigslist Dubai",url:"https://dubai.craigslist.org",da:89,pa:59,region:"gulf"},
+  {name:"Buzzon Khaleej Times",url:"https://buzzon.khaleejtimes.com",da:87,pa:59,region:"gulf"},
+  {name:"Sify",url:"https://sify.com",da:87,pa:59,region:"india"},
+  {name:"Gumtree",url:"https://gumtree.com",da:84,pa:60,region:"global"},
+  {name:"Jagran Classifieds",url:"https://classifieds.jagran.com",da:83,pa:53,region:"india"},
+  {name:"Sulekha Classifieds",url:"https://classifieds.sulekha.com",da:78,pa:57,region:"india"},
+  {name:"IndiaMART",url:"https://indiamart.com",da:74,pa:63,region:"india"},
+  {name:"Trovit",url:"https://trovit.com",da:73,pa:56,region:"global"},
+  {name:"WebIndia123",url:"https://classifieds.webindia123.com",da:68,pa:54,region:"india"},
+  {name:"ClassifiedAds",url:"https://classifiedads.com",da:63,pa:58,region:"global"},
+  {name:"OLX India",url:"https://olx.in",da:61,pa:57,region:"india"},
+  {name:"Dubizzle UAE",url:"https://dubai.dubizzle.com",da:61,pa:56,region:"gulf"},
+  {name:"Quikr",url:"https://quikr.com",da:60,pa:56,region:"india"},
+  {name:"Locanto",url:"https://locanto.com",da:47,pa:54,region:"global"},
+  {name:"ClickIndia",url:"https://clickindia.com",da:47,pa:52,region:"india"},
+  {name:"VivaStreet India",url:"https://vivastreet.co.in",da:32,pa:48,region:"india"},
+  {name:"Khojle",url:"https://khojle.in",da:30,pa:46,region:"india"},
+  {name:"Admaya India",url:"https://admaya.in",da:29,pa:47,region:"india"},
+  {name:"FreeAdsInIndia",url:"https://freeadsinindia.in",da:22,pa:46,region:"india"},
+  {name:"YellowPages UAE",url:"https://yellowpages.ae",da:39,pa:50,region:"gulf"},
+  {name:"Expatriates",url:"https://expatriates.com",da:56,pa:55,region:"gulf"},
+  {name:"Locanto India",url:"https://locanto.in",da:37,pa:47,region:"india"},
+  {name:"AdPost",url:"https://adpost.com",da:54,pa:57,region:"global"},
+  {name:"Storeboard",url:"https://storeboard.com",da:62,pa:60,region:"global"},
+  {name:"Classifieds4U India",url:"https://classifieds4u.in",da:58,pa:45,region:"india"}
+];
+let currentPage=1, currentFilter="all", searchQuery="";
+const itemsPerPage=24;
+function filterSites(){
+  return sitesData.filter(s=>{
+    if(currentFilter!=="all"){
+      if(currentFilter==="high" && s.da<50) return false;
+      if(currentFilter==="india" && s.region!=="india") return false;
+      if(currentFilter==="gulf" && s.region!=="gulf") return false;
+    }
+    if(searchQuery.trim()){
+      let q=searchQuery.toLowerCase();
+      return s.name.toLowerCase().includes(q) || s.url.toLowerCase().includes(q);
+    }
+    return true;
+  }).sort((a,b)=>b.da-a.da);
+}
+function render(){
+  let filtered=filterSites();
+  let totalPages=Math.ceil(filtered.length/itemsPerPage);
+  let start=(currentPage-1)*itemsPerPage;
+  let paginated=filtered.slice(start,start+itemsPerPage);
+  let grid=document.getElementById("backlinkGrid");
+  document.getElementById("resultCount").innerHTML=`📋 ${filtered.length} backlink sources`;
+  if(paginated.length===0){grid.innerHTML="<div style='text-align:center;padding:3rem'>No results</div>";return;}
+  grid.innerHTML=paginated.map(s=>`
+    <div class="card">
+      <div class="site-name">
+        🌐 ${escapeHtml(s.name)}
+        <span class="da-badge">DA ${s.da}</span>
+      </div>
+      <div class="site-url">${escapeHtml(s.url)}</div>
+      <div>
+        <a href="${s.url}" target="_blank" rel="noopener" class="btn-visit">🔗 Visit & Submit</a>
+        <button class="copy-link" data-url="${s.url}">📋 Copy URL</button>
+      </div>
+    </div>
+  `).join("");
+  let pagHtml=``;
+  for(let i=1;i<=Math.min(totalPages,10);i++) pagHtml+=`<button class="page-btn ${currentPage===i?'active-page':''}" data-page="${i}">${i}</button>`;
+  document.getElementById("paginationControls").innerHTML=`<button class="page-btn" data-page="prev" ${currentPage===1?'disabled':''}>‹ Prev</button>${pagHtml}<button class="page-btn" data-page="next" ${currentPage===totalPages?'disabled':''}>Next ›</button>`;
+  document.querySelectorAll(".copy-link").forEach(btn=>btn.addEventListener("click",(e)=>{
+    navigator.clipboard.writeText(btn.dataset.url);
+    btn.textContent="✓ Copied!";
+    setTimeout(()=>btn.textContent="📋 Copy URL",1500);
+  }));
+}
+function escapeHtml(str){return str.replace(/[&<>]/g,function(m){if(m==='&')return '&amp;';if(m==='<')return '&lt;';return '&gt;';});}
+function setup(){
+  document.querySelectorAll(".filter-btn").forEach(btn=>btn.addEventListener("click",()=>{
+    document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    currentFilter=btn.dataset.filter;
+    currentPage=1;
+    render();
+  }));
+  document.getElementById("searchInput").addEventListener("input",(e)=>{searchQuery=e.target.value;currentPage=1;render();});
+  document.getElementById("paginationControls").addEventListener("click",(e)=>{
+    let btn=e.target.closest(".page-btn");
+    if(!btn) return;
+    let total=Math.ceil(filterSites().length/itemsPerPage);
+    if(btn.dataset.page==="prev" && currentPage>1) currentPage--;
+    else if(btn.dataset.page==="next" && currentPage<total) currentPage++;
+    else if(!isNaN(btn.dataset.page)) currentPage=parseInt(btn.dataset.page);
+    render();
+  });
+}
+render(); setup();
+</script>
+</body>
+</html>
