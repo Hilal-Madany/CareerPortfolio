@@ -1,245 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog + Backlink SEO Tool | Hilal Madany | Fatehpur UP</title>
-<meta name="description" content="Hilal Madany Blog — Engineering careers, AI technology, new jobs 2025, ITI & Diploma guidance, business startups, affiliate marketing, Gulf job reality. Plus live backlink monitoring dashboard.">
-<meta name="author" content="Syed Hilaluddin Madany — hilalmadany.com">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.hilalmadany.com/blog.html">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #f0ede8; --bg2: #e8e3dc; --ink: #141210; --ink2: #252018;
-  --teal: #0a7a70; --teal-lt: #0fb8a4; --amber: #c4760e;
-  --violet: #5040b8; --rose: #b03838; --green: #256838;
-  --white: #ffffff; --card: #faf8f5; --muted: #706860;
-  --border: rgba(20,18,16,0.1); --sh: 0 2px 16px rgba(20,18,16,0.07);
-  --sh2: 0 12px 48px rgba(20,18,16,0.14); --fh: 'Playfair Display', serif;
-  --fb: 'DM Sans', sans-serif; --fm: 'JetBrains Mono', monospace;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: var(--fb); background: var(--bg); color: var(--ink); line-height:1.65; scroll-behavior:smooth; }
-.sticky-contact-bar { position:fixed; top:0; left:0; right:0; z-index:300; background:linear-gradient(90deg,#0a1a18 0%,#111810 100%); border-bottom:1px solid rgba(15,184,164,.2); padding:7px 4%; }
-.scb-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
-.scb-left { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-.scb-name { font-size:.72rem; font-weight:700; color:#fff; }
-.scb-tag { font-family:var(--fm); font-size:.62rem; color:rgba(255,255,255,.35); }
-.scb-right { display:flex; gap:7px; flex-wrap:wrap; }
-.scb-btn { display:inline-flex; align-items:center; gap:5px; padding:5px 13px; border-radius:5px; font-size:.72rem; font-weight:700; text-decoration:none; }
-.scb-call { background:var(--teal); color:#fff; }
-.scb-wa { background:#25d366; color:#fff; }
-.scb-home { background:rgba(255,255,255,.08); color:rgba(255,255,255,.75); border:1px solid rgba(255,255,255,.12); }
-.scb-close { background:transparent; color:rgba(255,255,255,.3); border:none; cursor:pointer; padding:4px 7px; }
-nav.blog-nav { position:fixed; top:40px; left:0; right:0; z-index:200; background:rgba(20,18,16,.97); backdrop-filter:blur(16px); height:58px; display:flex; align-items:center; padding:0 4%; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,.05); }
-.logo { font-family:var(--fh); font-size:1.05rem; color:#fff; font-weight:800; }
-.logo em { color:var(--teal-lt); font-style:normal; }
-.nav-menu { display:flex; gap:1.2rem; list-style:none; align-items:center; flex-wrap:wrap; }
-.nav-menu a { color:rgba(255,255,255,.5); font-size:.71rem; text-decoration:none; font-weight:500; text-transform:uppercase; }
-.nav-menu a:hover, .nav-menu a.active { color:var(--teal-lt); }
-.nav-btn { background:var(--teal)!important; color:#fff!important; padding:6px 15px; border-radius:6px!important; }
-.blog-hero { background:var(--ink); padding:130px 4% 60px; position:relative; }
-.bh-inner { max-width:900px; }
-.bh-label { font-family:var(--fm); font-size:.65rem; color:var(--teal-lt); text-transform:uppercase; margin-bottom:.8rem; display:block; }
-.bh-title { font-family:var(--fh); font-size:clamp(2.2rem,5vw,4rem); color:#fff; font-weight:800; line-height:1.05; }
-.bh-title em { color:var(--teal-lt); }
-.bh-sub { font-size:.92rem; color:rgba(255,255,255,.5); margin-bottom:1.6rem; max-width:620px; }
-.bh-pills { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:1.8rem; }
-.bh-pill { font-family:var(--fm); font-size:.63rem; color:rgba(255,255,255,.45); border:1px solid rgba(255,255,255,.1); padding:4px 12px; border-radius:100px; text-decoration:none; cursor:pointer; }
-.bh-pill.active { background:rgba(10,122,112,.2); border-color:rgba(15,184,164,.4); color:var(--teal-lt); }
-.blog-layout { display:grid; grid-template-columns:1fr 320px; gap:3rem; padding:60px 4%; max-width:1280px; margin:0 auto; }
-.sec-label { font-family:var(--fm); font-size:.65rem; color:var(--teal); text-transform:uppercase; margin-bottom:.5rem; display:block; }
-h2.sec-title { font-family:var(--fh); font-size:clamp(1.5rem,2.5vw,2rem); font-weight:800; margin-bottom:.5rem; }
-h2.sec-title span { color:var(--teal); }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog + Backlink SEO Tool | Hilal Madany | Fatehpur UP</title>
+    
+    <meta name="description" content="Hilal Madany Blog — Engineering, AI technology, and Gulf job guidance from Fatehpur, UP.">
+    <meta property="og:title" content="Hilal Madany | Career & SEO Hub">
+    <meta property="og:image" content="https://www.hilalmadany.com/og-image.jpg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #f0ede8; --bg2: #e8e3dc; --ink: #141210; --ink2: #252018;
+            --teal: #0a7a70; --teal-lt: #0fb8a4; --amber: #c4760e;
+            --white: #ffffff; --card: #faf8f5; --muted: #706860;
+            --border: rgba(20,18,16,0.1); --sh: 0 2px 16px rgba(20,18,16,0.07);
+            --fh: 'Playfair Display', serif; --fb: 'DM Sans', sans-serif; --fm: 'JetBrains Mono', monospace;
+        }
 
-/* VISIBLE SEO STRATEGY BOX - THIS SHOWS ON WEBSITE */
-.seo-strategy-box {
-  background: linear-gradient(135deg, #0c2f2a 0%, #1a4a42 100%);
-  border-left: 6px solid #0fb8a4;
-  border-radius: 20px;
-  padding: 1.5rem 1.8rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  animation: pulse-border 2s ease-in-out infinite;
-}
-@keyframes pulse-border {
-  0%, 100% { border-left-color: #0fb8a4; box-shadow: 0 8px 24px rgba(15,184,164,0.2); }
-  50% { border-left-color: #0a7a70; box-shadow: 0 8px 24px rgba(10,122,112,0.4); }
-}
-.seo-strategy-box h3 {
-  font-family: var(--fh);
-  font-size: 1.2rem;
-  color: #0fb8a4;
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.seo-strategy-box h3::before {
-  content: "💡";
-  font-size: 1.3rem;
-}
-.seo-strategy-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.seo-steps {
-  flex: 2;
-}
-.seo-step {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 0.8rem;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.85);
-}
-.seo-step-num {
-  background: #0fb8a4;
-  color: #0c2f2a;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 0.7rem;
-}
-.seo-url-box {
-  background: #0a1f1c;
-  padding: 0.6rem 1rem;
-  border-radius: 12px;
-  font-family: monospace;
-  font-size: 0.8rem;
-  color: #0fb8a4;
-  border: 1px dashed #0fb8a4;
-}
-.seo-warning {
-  background: rgba(196,118,14,0.15);
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  font-size: 0.7rem;
-  color: #e8a820;
-  margin-top: 0.8rem;
-}
-@media (max-width:700px) { .seo-strategy-content { flex-direction: column; align-items: flex-start; } }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: var(--fb); background: var(--bg); color: var(--ink); line-height:1.6; }
 
-.featured-article { background:var(--ink); border-radius:20px; padding:2rem 2.2rem; margin-bottom:2.5rem; border:1px solid rgba(15,184,164,.15); }
-.fa-badge { display:inline-flex; font-family:var(--fm); font-size:.62rem; background:rgba(15,184,164,.15); border:1px solid rgba(15,184,164,.3); color:var(--teal-lt); padding:4px 12px; border-radius:100px; margin-bottom:1rem; }
-.fa-title { font-family:var(--fh); font-size:clamp(1.4rem,3vw,2.2rem); color:#fff; font-weight:800; line-height:1.1; margin-bottom:.7rem; }
-.fa-tag { font-family:var(--fm); font-size:.62rem; display:inline-block; padding:3px 10px; border-radius:4px; margin-right:8px; margin-bottom:8px; }
-.ft-career { background:rgba(10,122,112,.2); color:var(--teal-lt); }
-.fa-excerpt { font-size:.88rem; color:rgba(255,255,255,.55); margin-bottom:1.2rem; }
-.fa-read { display:inline-flex; align-items:center; gap:7px; background:var(--teal); color:#fff; padding:9px 20px; border-radius:7px; text-decoration:none; font-weight:700; }
-.article-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:2rem; }
-.art-card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem; transition:transform .2s; box-shadow:var(--sh); }
-.art-card:hover { transform:translateY(-4px); box-shadow:var(--sh2); }
-.ac-tags { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:.7rem; }
-.act { font-family:var(--fm); font-size:.6rem; padding:3px 9px; border-radius:4px; background:rgba(10,122,112,.1); color:var(--teal); }
-.ac-title { font-family:var(--fh); font-size:.97rem; font-weight:700; margin-bottom:.4rem; }
-.ac-excerpt { font-size:.77rem; color:var(--muted); line-height:1.78; margin-bottom:.8rem; }
-.ac-meta { display:flex; justify-content:space-between; border-top:1px solid var(--border); padding-top:.7rem; }
-.ac-date { font-family:var(--fm); font-size:.6rem; color:var(--muted); }
-.ac-read { font-size:.72rem; font-weight:700; color:var(--teal); text-decoration:none; }
-.job-board { background:var(--white); border-radius:16px; padding:1.6rem; margin-bottom:2rem; border:1px solid var(--border); }
-.job-list { display:flex; flex-direction:column; gap:12px; margin-bottom:1rem; }
-.job-item { background:var(--bg); border-left:3px solid var(--teal); border-radius:10px; padding:.8rem 1rem; }
-.ji-title { font-weight:700; font-size:.87rem; }
-.ji-details { font-size:.75rem; color:var(--muted); }
-.art-cta { background:var(--ink); border-radius:10px; padding:1rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:1rem; align-items:center; }
-.art-cta-text { font-size:.8rem; color:rgba(255,255,255,.55); }
-.btn-sm { display:inline-flex; align-items:center; gap:5px; padding:7px 14px; border-radius:6px; font-size:.76rem; font-weight:700; text-decoration:none; }
-.btn-teal { background:var(--teal); color:#fff; }
-.btn-wa { background:#25d366; color:#fff; }
-.sidebar { display:flex; flex-direction:column; gap:20px; }
-.sidebar-card { background:var(--card); border-radius:14px; padding:1.2rem; border:1px solid var(--border); }
-.sb-title { font-family:var(--fh); font-size:1rem; font-weight:700; margin-bottom:1rem; }
-.sb-contact-card { background:var(--ink); border-radius:14px; padding:1.2rem; }
-.sb-contact-card .sb-title { color:#fff; }
-.sb-clinks { display:flex; flex-direction:column; gap:8px; }
-.sb-cl { display:flex; align-items:center; gap:9px; padding:9px 12px; border-radius:8px; text-decoration:none; font-weight:600; font-size:.8rem; }
-.sb-cl-call { background:var(--teal); color:#fff; }
-.sb-cl-wa { background:#25d366; color:#fff; }
-.bpl-sidebar { background:linear-gradient(135deg,#0a7a70,#256838); border-radius:14px; padding:1.2rem; color:#fff; }
-.bpl-sb-btn { background:rgba(255,255,255,.2); color:#fff; padding:7px 14px; border-radius:6px; text-decoration:none; display:inline-block; font-size:.76rem; }
-.subscribe-bar { background:var(--ink); padding:40px 4%; text-align:center; }
-.sub-title { font-family:var(--fh); font-size:1.6rem; color:#fff; }
-.sub-form { display:flex; gap:10px; max-width:480px; margin:0 auto; flex-wrap:wrap; justify-content:center; }
-.sub-input { flex:1; padding:11px 15px; border-radius:8px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.07); color:#fff; }
-.sub-btn { background:var(--teal); color:#fff; border:none; padding:11px 22px; border-radius:8px; font-weight:700; cursor:pointer; }
-.links-section { background:var(--bg2); padding:40px 4%; }
-.links-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
-.link-card { background:var(--card); border-radius:10px; padding:.8rem; text-decoration:none; display:block; border:1px solid var(--border); }
-.lc-name { font-weight:700; font-size:.8rem; color:var(--ink); }
-footer { background:var(--ink2); padding:2rem 4%; text-align:center; color:rgba(255,255,255,.3); }
-.fbtn { position:fixed; bottom:20px; right:20px; background:#25d366; color:#fff; padding:10px 18px; border-radius:100px; text-decoration:none; font-weight:700; display:flex; align-items:center; gap:6px; z-index:999; }
-@media (max-width:960px) { .blog-layout { grid-template-columns:1fr; } .sidebar { display:none; } .article-grid { grid-template-columns:1fr; } .links-grid { grid-template-columns:1fr 1fr; } }
-</style>
+        /* Header & Nav */
+        .sticky-contact-bar { position:fixed; top:0; left:0; right:0; z-index:300; background:#0a1a18; padding:8px 4%; border-bottom:1px solid var(--teal-lt); }
+        .scb-inner { display:flex; justify-content:space-between; align-items:center; }
+        .scb-name { font-size:.7rem; color:#fff; font-weight:700; }
+        .scb-btn { background:var(--teal); color:#fff; padding:5px 12px; border-radius:5px; text-decoration:none; font-size:.7rem; font-weight:700; margin-left:10px; }
+        
+        nav.blog-nav { position:fixed; top:42px; left:0; right:0; z-index:200; background:rgba(20,18,16,.95); backdrop-filter:blur(10px); height:60px; display:flex; align-items:center; padding:0 4%; justify-content:space-between; }
+        .logo { font-family:var(--fh); font-size:1.2rem; color:#fff; text-decoration:none; font-weight:800; }
+        .logo em { color:var(--teal-lt); font-style:normal; }
+
+        /* Hero */
+        .blog-hero { background:var(--ink); padding:140px 4% 60px; color:#fff; }
+        .bh-title { font-family:var(--fh); font-size:clamp(2rem, 5vw, 3.5rem); line-height:1.1; }
+        .bh-title em { color:var(--teal-lt); }
+
+        /* Layout */
+        .blog-layout { display:grid; grid-template-columns:1fr 320px; gap:2.5rem; padding:50px 4%; max-width:1300px; margin:0 auto; }
+
+        /* SEO STRATEGY BOX */
+        .seo-strategy-box { background:#0c2f2a; border-left:5px solid var(--teal-lt); border-radius:15px; padding:20px; margin-bottom:30px; color:#fff; }
+        .seo-url { background:rgba(0,0,0,0.3); padding:8px; border-radius:8px; font-family:var(--fm); color:var(--teal-lt); font-size:0.8rem; margin-top:10px; border:1px dashed var(--teal-lt); }
+
+        /* Article Cards */
+        .article-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+        .art-card { background:var(--card); border:1px solid var(--border); border-radius:15px; padding:25px; transition:0.3s; position:relative; display:flex; flex-direction:column; }
+        .art-card:hover { transform:translateY(-5px); box-shadow:var(--sh); border-color:var(--teal-lt); }
+        .ac-category { font-family:var(--fm); font-size:0.6rem; text-transform:uppercase; color:var(--teal); font-weight:700; margin-bottom:10px; display:block; }
+        .ac-title { font-family:var(--fh); font-size:1.2rem; margin-bottom:12px; color:var(--ink); }
+        
+        /* Read More Functionality */
+        .ac-excerpt { font-size:0.85rem; color:var(--muted); margin-bottom:15px; }
+        .more-content { display: none; margin-top: 10px; color: var(--ink); border-top: 1px solid #eee; padding-top: 10px; }
+        .read-more-btn { background:none; border:none; color:var(--teal); font-weight:700; font-size:0.8rem; cursor:pointer; text-decoration:underline; align-self:flex-start; padding:0; }
+
+        /* Job Board */
+        .job-board { background:var(--white); border:1px solid var(--border); border-radius:15px; padding:20px; margin-top:40px; }
+        .job-item { background:var(--bg); padding:12px; border-radius:8px; margin-bottom:10px; border-left:4px solid var(--teal); }
+        
+        /* Sidebar */
+        .sidebar-card { background:var(--white); border-radius:15px; padding:20px; border:1px solid var(--border); margin-bottom:20px; }
+        .sb-title { font-family:var(--fh); font-size:1rem; margin-bottom:15px; }
+
+        footer { background:var(--ink2); padding:40px 4%; text-align:center; color:rgba(255,255,255,0.4); font-size:0.8rem; margin-top:50px; }
+
+        @media (max-width: 900px) {
+            .blog-layout { grid-template-columns: 1fr; }
+            .article-grid { grid-template-columns: 1fr; }
+            .sidebar { display:none; }
+        }
+    </style>
 </head>
 <body>
-<div class="sticky-contact-bar" id="stickyBar"><div class="scb-inner"><div class="scb-left"><span class="scb-name">Syed Hilaluddin Madany — Fatehpur, UP</span><span class="scb-tag">MEP Consultant · AI Coach · BPL FREE</span></div><div class="scb-right"><a href="tel:+919650329719" class="scb-btn scb-call">📞 +91 96503 29719</a><a href="https://wa.me/919650329719" target="_blank" class="scb-btn scb-wa">💬 WhatsApp</a><a href="/" class="scb-btn scb-home">🏠 Main Site</a><button class="scb-close" onclick="document.getElementById('stickyBar').style.display='none'">✕</button></div></div></div>
-<nav class="blog-nav"><a href="/" class="logo">Hilal<em>Madany</em></a><ul class="nav-menu"><li><a href="/blog.html" class="active">Blog</a></li><li><a href="#careers">Careers</a></li><li><a href="#jobs">Jobs</a></li><li><a href="#ai-tech">AI & Tech</a></li><li><a href="#business">Business</a></li><li><a href="#students">Students</a></li><li><a href="#contact" class="nav-btn">Contact</a></li></ul></nav>
-<section class="blog-hero"><div class="bh-inner"><span class="bh-label">📘 hilalmadany.com/blog — Fatehpur, Uttar Pradesh</span><h1 class="bh-title">Knowledge That<br><em>Actually Helps</em></h1><p class="bh-sub">Engineering careers, AI technology, new job alerts, ITI & Diploma guidance, Gulf job reality, business startups, affiliate marketing — written from Fatehpur, UP for India & the world.</p><div class="bh-pills"><span class="bh-pill active">All Posts</span><a href="#careers" class="bh-pill">Career Guidance</a><a href="#jobs" class="bh-pill">Job Alerts</a><a href="#ai-tech" class="bh-pill">AI & Tech</a><a href="#business" class="bh-pill">Startups</a><a href="#students" class="bh-pill">School Q&A</a></div></div></section>
-<div class="blog-layout"><main>
-  
-  <!-- ✅ VISIBLE SEO STRATEGY BOX - NOW SHOWS ON WEBSITE ✅ -->
-  <div class="seo-strategy-box">
-    <h3>SEO Strategy — How to Build Backlinks</h3>
-    <div class="seo-strategy-content">
-      <div class="seo-steps">
-        <div class="seo-step"><span class="seo-step-num">1</span> Click <strong>"Visit & Submit"</strong> on any site below</div>
-        <div class="seo-step"><span class="seo-step-num">2</span> Post genuine ad (Career Guidance / MEP Consulting / AI Training)</div>
-        <div class="seo-step"><span class="seo-step-num">3</span> Add your URL: <strong style="color:#0fb8a4;">https://www.hilalmadany.com</strong></div>
-        <div class="seo-step"><span class="seo-step-num">4</span> Post <strong>5-10 ads per week</strong> — consistency is key!</div>
-      </div>
-      <div class="seo-url-box">
-        📌 Your URL to add everywhere:<br>
-        <strong style="font-size:1rem;">https://www.hilalmadany.com</strong>
-      </div>
+
+<div class="sticky-contact-bar" id="stickyBar">
+    <div class="scb-inner">
+        <span class="scb-name">Syed Hilaluddin Madany — Fatehpur, UP</span>
+        <div class="scb-links">
+            <a href="tel:+919650329719" class="scb-btn">📞 Call</a>
+            <a href="https://wa.me/919650329719" class="scb-btn" style="background:#25d366;">WhatsApp</a>
+        </div>
     </div>
-    <div class="seo-warning">
-      ⚠️ NO SPAM — Always add value. Genuine posts get approved and last longer. Quality > Quantity.
-    </div>
-  </div>
-
-  <div class="featured-article"><div class="fa-badge">🔥 FEATURED — MUST READ</div><h2 class="fa-title">ITI के बाद Gulf Job कैसे मिलती है — Real Guide 2025</h2><div><span class="fa-tag ft-career">Gulf Jobs</span></div><p class="fa-excerpt">Saudi Arabia, UAE, Qatar — real salary, visa process, agencies vs direct. Complete roadmap for Fatehpur, UP candidates. Free counselling for BPL students.</p><a href="#" class="fa-read">Read Full Guide →</a></div>
-
-  <div id="careers"><span class="sec-label">🎯 CAREER BLUEPRINT</span><h2 class="sec-title">Engineering & <span>ITI/Diploma</span> Guidance</h2><div class="article-grid">
-    <div class="art-card"><div class="ac-tags"><span class="act">HVAC</span></div><div class="ac-title">HVAC Engineer Jobs India 2025 — Salary, Companies</div><div class="ac-excerpt">Top MEP firms hiring in Noida, Gurgaon, Pune. Fresher to experienced.</div><div class="ac-meta"><span class="ac-date">📅 15 Feb 2025</span><a href="#" class="ac-read">Read →</a></div></div>
-    <div class="art-card"><div class="ac-tags"><span class="act">Diploma</span></div><div class="ac-title">Diploma vs B.Tech after 10th? Reality & Salary</div><div class="ac-excerpt">Government polytechnic, lateral entry, high-demand trades 2025.</div><div class="ac-meta"><span class="ac-date">📅 5 Mar 2025</span><a href="#" class="ac-read">Read →</a></div></div>
-    <div class="art-card"><div class="ac-tags"><span class="act">Gulf Reality</span></div><div class="ac-title">Saudi Arabia Jobs for ITI Fitter — Real Contract Tips</div><div class="ac-excerpt">Hidden charges, free visa vs paid, what Gulf companies expect.</div><div class="ac-meta"><span class="ac-date">📅 20 Mar 2025</span><a href="#" class="ac-read">Read →</a></div></div>
-    <div class="art-card"><div class="ac-tags"><span class="act">Facility Management</span></div><div class="ac-title">FM Industry Boom in India: 12,000+ Jobs</div><div class="ac-excerpt">Soft services, technical staff, BMS operator roles. Certification guide.</div><div class="ac-meta"><span class="ac-date">📅 1 Apr 2025</span><a href="#" class="ac-read">Read →</a></div></div>
-  </div></div>
-
-  <div id="jobs" class="job-board"><div class="jb-header"><h3 style="font-family:var(--fh);">📢 Active Job Alerts 2025</h3></div><div class="job-list">
-    <div class="job-item"><div class="ji-title">HVAC Technician (AC & Refrigeration)</div><div class="ji-details">📍 Saudi Arabia & Delhi NCR | ITI/Diploma | Salary: 1800-2500 SAR</div></div>
-    <div class="job-item"><div class="ji-title">MEP Supervisor — Facility Management 🔥 Urgent</div><div class="ji-details">📍 Lucknow + Mumbai | Diploma | Up to ₹45k/month</div></div>
-  </div><div class="art-cta"><div class="art-cta-text"><strong>Need help applying?</strong> Call or WhatsApp for resume review.</div><div class="art-cta-btns"><a href="https://wa.me/919650329719" class="btn-sm btn-wa">📲 Ask on WhatsApp</a></div></div></div>
-
-  <div id="ai-tech"><span class="sec-label">🤖 AI & FUTURE TECH</span><h2 class="sec-title">Artificial Intelligence <span>for Students</span></h2><div class="article-grid">
-    <div class="art-card"><div class="ac-tags"><span class="act">AI Basics</span></div><div class="ac-title">AI क्या है? Class 6-10 Students Guide</div><div class="ac-excerpt">No coding needed: How AI works, ChatGPT, image generation.</div><div class="ac-meta"><span class="ac-date">📅 1 Feb 2025</span><a href="#" class="ac-read">Read →</a></div></div>
-    <div class="art-card"><div class="ac-tags"><span class="act">Automation</span></div><div class="ac-title">Automation Will Replace Which Jobs? (5 New Roles)</div><div class="ac-excerpt">Data annotation, prompt engineering for beginners.</div><div class="ac-meta"><span class="ac-date">📅 10 Mar 2025</span><a href="#" class="ac-read">Read →</a></div></div>
-  </div></div>
-
-  <div id="students"><span class="sec-label">🎓 SCHOOL STUDENTS Q&A</span><h2 class="sec-title">Class 6–12: <span>Career, Maths & Future</span></h2><div class="art-cta" style="background:var(--white); border:1px solid var(--border);"><div class="art-cta-text" style="color:var(--ink);"><strong>📞 BPL Students FREE Coaching</strong> — Maths, Science, AI basics, Resume building</div><a href="tel:+919650329719" class="btn-sm btn-teal">Call for time slot</a></div></div>
-</main>
-<aside class="sidebar">
-  <div class="sidebar-card sb-contact-card"><div class="sb-title">📞 Direct Contact</div><div class="sb-clinks"><a href="tel:+919650329719" class="sb-cl sb-cl-call">📱 +91 96503 29719</a><a href="https://wa.me/919650329719" class="sb-cl sb-cl-wa">💬 WhatsApp: Career queries</a></div></div>
-  <div class="sidebar-card"><div class="sb-title">📚 Browse by Topic</div><div class="sb-cats"><a href="#careers" class="sb-cat">🔧 Engineering / ITI / Diploma</a><a href="#jobs" class="sb-cat">💼 New Jobs 2025</a><a href="#ai-tech" class="sb-cat">🧠 AI & Technology</a></div></div>
-  <div class="bpl-sidebar"><div class="bpl-sb-title">🎓 BPL Students Free Coaching</div><div class="bpl-sb-desc">For low-income families in Fatehpur district.</div><a href="tel:+919650329719" class="bpl-sb-btn">📞 Register Free →</a></div>
-</aside>
 </div>
-<div class="subscribe-bar"><div class="sub-title">Get Job Alerts & Career Tips</div><div class="sub-desc">Weekly updates on Gulf jobs, AI trends, and free coaching events.</div><form class="sub-form"><input type="email" placeholder="Your email address" class="sub-input" required><button type="submit" class="sub-btn">Subscribe →</button></form></div>
-<div class="links-section"><div class="links-inner"><div class="links-title">🔗 RESOURCE HUB — hilalmadany.com network</div><div class="links-grid"><a href="https://www.accumentechno.com" target="_blank" class="link-card"><div class="lc-name">Accumen Techno Solutions</div></a><a href="/" class="link-card"><div class="lc-name">Hilal Madany Official</div></a><a href="#careers" class="link-card"><div class="lc-name">ITI Gulf Job Guide</div></a></div></div></div>
-<footer><div class="fi"><div class="flogo">Hilal<em>Madany</em> — Fatehpur UP</div><div class="floc">📍 Haswa & Chak Korra Sadat, Fatehpur, UP 212601</div></div><div class="fcopy">© 2025 Syed Hilaluddin Madany. Free career guidance for BPL families. +91 96503 29719</div></footer>
-<a href="https://wa.me/919650329719" class="fbtn">💬 WhatsApp Query</a>
+
+<nav class="blog-nav">
+    <a href="/" class="logo">Hilal<em>Madany</em></a>
+    <div style="color:#fff; font-size:0.7rem; font-family:var(--fm);">CAREER GUIDANCE HUB</div>
+</nav>
+
+<section class="blog-hero">
+    <h1 class="bh-title">Helping You Build a<br><em>Better Future.</em></h1>
+    <p style="opacity:0.6; margin-top:15px; max-width:600px;">Expert insights on MEP Engineering, AI Technology, and Gulf Careers for students in Fatehpur and beyond.</p>
+</section>
+
+<div class="blog-layout">
+    <main>
+        <div class="seo-strategy-box">
+            <h3 style="font-family:var(--fh); color:var(--teal-lt);">🚀 Backlink Strategy</h3>
+            <p style="font-size:0.8rem; margin-top:5px;">Post these articles on LinkedIn, Quora, or Job Boards to improve SEO rank.</p>
+            <div class="seo-url">Target Link: https://www.hilalmadany.com</div>
+        </div>
+
+        <div class="article-grid">
+            
+            <div class="art-card">
+                <span class="ac-category">Gulf Jobs</span>
+                <h3 class="ac-title">ITI के बाद Gulf Job Guide 2025</h3>
+                <div class="ac-excerpt">
+                    Thinking of moving to Dubai or Saudi for work? Here is the roadmap for ITI holders.
+                    <div class="more-content">
+                        Focus on trades like HVAC, Electrician, and Pipe Fitting. Ensure your experience certificate is attested. Always verify recruitment agencies through the eMigrate portal to avoid scams.
+                    </div>
+                </div>
+                <button class="read-more-btn" onclick="toggleRead(this)">Read More</button>
+            </div>
+
+            <div class="art-card">
+                <span class="ac-category">Artificial Intelligence</span>
+                <h3 class="ac-title">AI for Students: Why it Matters</h3>
+                <div class="ac-excerpt">
+                    AI is not just for coders. Students from Class 6 to 12 can use it to learn faster.
+                    <div class="more-content">
+                        Learn how to use ChatGPT for school projects and Midjourney for creative arts. Understanding AI now will prepare you for the 2030 job market where AI literacy will be mandatory.
+                    </div>
+                </div>
+                <button class="read-more-btn" onclick="toggleRead(this)">Read More</button>
+            </div>
+
+            <div class="art-card">
+                <span class="ac-category">MEP Engineering</span>
+                <h3 class="ac-title">HVAC Design vs Site Engineering</h3>
+                <div class="ac-excerpt">
+                    Which path is better for fresh Mechanical Engineers? Let's compare the two.
+                    <div class="more-content">
+                        Design roles focus on HAP calculations and AutoCAD, offering office-based growth. Site roles involve installation and project management. Salary varies based on certification.
+                    </div>
+                </div>
+                <button class="read-more-btn" onclick="toggleRead(this)">Read More</button>
+            </div>
+
+            <div class="art-card">
+                <span class="ac-category">Community</span>
+                <h3 class="ac-title">Free Coaching for BPL Students</h3>
+                <div class="ac-excerpt">
+                    Our mission in Fatehpur: providing free education to those who need it most.
+                    <div class="more-content">
+                        We offer weekend batches for Maths, Science, and English. If you belong to a BPL family in Haswa or Sadat, contact us for a free seat in our career mentorship program.
+                    </div>
+                </div>
+                <button class="read-more-btn" onclick="toggleRead(this)">Read More</button>
+            </div>
+
+        </div>
+
+        <div class="job-board">
+            <h3 style="font-family:var(--fh); margin-bottom:15px;">🔥 Current Job Openings</h3>
+            <div class="job-item">
+                <strong style="font-size:0.9rem;">HVAC Technician</strong><br>
+                <small>Location: Saudi Arabia | Experience: 2+ Years | Salary: 2200 SAR</small>
+            </div>
+            <div class="job-item">
+                <strong style="font-size:0.9rem;">Assistant MEP Engineer</strong><br>
+                <small>Location: Lucknow | Experience: Freshers Welcome | Salary: ₹20,000</small>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="sidebar-card">
+            <h4 class="sb-title">About the Author</h4>
+            <p style="font-size:0.8rem; color:var(--muted);">Syed Hilaluddin Madany is an MEP Consultant and AI Coach based in Fatehpur, UP, dedicated to rural youth empowerment.</p>
+        </div>
+        <div class="sidebar-card" style="background:var(--teal); color:#fff;">
+            <h4 class="sb-title">Need Guidance?</h4>
+            <p style="font-size:0.8rem; margin-bottom:15px;">Get a free 10-minute career consultation on WhatsApp.</p>
+            <a href="https://wa.me/919650329719" style="color:#fff; font-weight:700; text-decoration:none; border:1px solid #fff; padding:8px 15px; border-radius:5px; display:inline-block;">Chat Now</a>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>© 2025 Syed Hilaluddin Madany | Haswa, Fatehpur, UP 212601</p>
+    <p style="margin-top:5px; opacity:0.5;">Built for Careers, AI Literacy, and Community Support.</p>
+</footer>
+
 <script>
-document.querySelector('.sub-form')?.addEventListener('submit', (e) => { e.preventDefault(); alert('✅ Thank you! You will receive career updates.'); });
+    function toggleRead(btn) {
+        const moreContent = btn.previousElementSibling.querySelector('.more-content');
+        
+        if (moreContent.style.display === "block") {
+            moreContent.style.display = "none";
+            btn.innerHTML = "Read More";
+        } else {
+            moreContent.style.display = "block";
+            btn.innerHTML = "Read Less";
+        }
+    }
 </script>
+
 </body>
 </html>
