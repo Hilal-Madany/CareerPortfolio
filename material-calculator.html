@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Selection Calculator - Piping & Equipment</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px; }
+    .container { max-width: 900px; margin: auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #333; }
+    label { font-weight: bold; display: block; margin: 15px 0 5px; }
+    select, input, button { padding: 10px; font-size: 16px; width: 100%; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc; }
+    button { background: #007bff; color: white; font-weight: bold; cursor: pointer; border: none; }
+    button:hover { background: #0056b3; }
+    .result { margin-top: 20px; padding: 15px; background: #e9f7ef; border-radius: 8px; border-left: 5px solid #28a745; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; text-align: left; border: 1px solid #ddd; }
+    th { background: #343a40; color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Material Selection Calculator for Piping & Equipment</h1>
+    <p style="text-align:center; color:#555;">Choose your component and service conditions. Get recommended material grades.</p>
+
+    <label>1. Component Type</label>
+    <select id="component">
+      <option value="">-- Select Component --</option>
+      <option value="Pipe">Pipe</option>
+      <option value="Fitting">Fitting / Flange</option>
+      <option value="Valve">Valve (Small or Large Bore)</option>
+      <option value="Plate">Plate</option>
+      <option value="Bolt">Bolt / Nut</option>
+    </select>
+
+    <label>2. Service Condition</label>
+    <select id="service">
+      <option value="">-- Select Service --</option>
+      <option value="General">General Service (Moderate Temp & Pressure)</option>
+      <option value="Corrosion">Corrosive / Wet Environment</option>
+      <option value="HighTemp">High Temperature & Pressure (Creep Service)</option>
+      <option value="LowTemp">Low Temperature / Cryogenic</option>
+    </select>
+
+    <button onclick="calculateMaterial()">Get Recommended Materials</button>
+
+    <div id="result" class="result" style="display:none;"></div>
+
+    <h2 style="margin-top:30px;">Quick Reference Table</h2>
+    <table>
+      <tr><th>Material Type</th><th>Best For</th><th>Common Grades</th></tr>
+      <tr><td><strong>Carbon Steel (CS)</strong></td><td>General service, cost-effective</td><td>A106 Gr B, A53 Gr B, A105, A234 WPB</td></tr>
+      <tr><td><strong>Stainless Steel (SS)</strong></td><td>Corrosion resistance</td><td>TP304, TP316, A182 F304/F316, A403 WP304</td></tr>
+      <tr><td><strong>Low Alloy Steel (LAS)</strong></td><td>High temperature & pressure</td><td>P11, P22, P5, P9, A335, A182 F11/F22</td></tr>
+      <tr><td><strong>Low Temp Carbon Steel (LTCS)</strong></td><td>Low / Cryogenic temperature</td><td>A333 Gr 6, A350 LF2, A420 WPL6</td></tr>
+    </table>
+  </div>
+
+  <script>
+    function calculateMaterial() {
+      const component = document.getElementById('component').value;
+      const service = document.getElementById('service').value;
+      const resultDiv = document.getElementById('result');
+
+      if (!component || !service) {
+        resultDiv.innerHTML = "<strong>Please select both Component and Service Condition.</strong>";
+        resultDiv.style.display = "block";
+        return;
+      }
+
+      let recommendation = "";
+
+      if (service === "General") {
+        recommendation = `<strong>Recommended:</strong> Carbon Steel (CS)<br>
+                          <strong>Common Grades:</strong> A106 Gr B, A53 Gr B, A105, A216 WCB<br>
+                          <em>Most economical and widely used for moderate conditions.</em>`;
+      } 
+      else if (service === "Corrosion") {
+        recommendation = `<strong>Recommended:</strong> Stainless Steel (SS)<br>
+                          <strong>Common Grades:</strong> TP304 / TP316, A182 F304/F316, A351 CF8M<br>
+                          <em>Excellent corrosion resistance in moist or aggressive fluids.</em>`;
+      } 
+      else if (service === "HighTemp") {
+        recommendation = `<strong>Recommended:</strong> Low Alloy Steel (LAS)<br>
+                          <strong>Common Grades:</strong> A335 P11, P22, P5, P9, A182 F11/F22, A387 Gr 11/22<br>
+                          <em>Good creep resistance at elevated temperatures and pressures.</em>`;
+      } 
+      else if (service === "LowTemp") {
+        recommendation = `<strong>Recommended:</strong> Low Temperature Carbon Steel (LTCS)<br>
+                          <strong>Common Grades:</strong> A333 Gr 6, A350 LF2, A352 LCB, A420 WPL6<br>
+                          <em>Prevents brittle fracture in low / cryogenic temperatures.</em>`;
+      }
+
+      resultDiv.innerHTML = `
+        <h3>Recommendation for ${component} in ${service.replace(/([A-Z])/g, ' $1').trim()} Service</h3>
+        <p>${recommendation}</p>
+        <small><strong>Note:</strong> Final selection must consider exact temperature, pressure, fluid chemistry, and applicable codes (ASME B31.3, IBR, etc.). Always verify with a qualified engineer.</small>
+      `;
+      resultDiv.style.display = "block";
+    }
+  </script>
+</body>
+</html>
