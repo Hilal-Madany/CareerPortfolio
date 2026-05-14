@@ -81,6 +81,15 @@
       "sameAs": ["https://www.linkedin.com/in/hilalmadany/","https://youtube.com/@hilalmadany","https://github.com/Global-Solutions-Hub"]
     },
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://hilalmadany.com/"},
+        {"@type":"ListItem","position":2,"name":"Programmes","item":"https://hilalmadany.com/#programmes"},
+        {"@type":"ListItem","position":3,"name":"Blog","item":"https://hilalmadany.com/blog.html"},
+        {"@type":"ListItem","position":4,"name":"Contact","item":"https://hilalmadany.com/#contact"}
+      ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"What is HM Academy in Fatehpur UP?","acceptedAnswer":{"@type":"Answer","text":"HM Academy (Hilal Madany) is Under registered society in Khalilnagar, Fatehpur, Uttar Pradesh. It bridges the gap between rural and urban education, offering engineering, management, AI, sales, procurement, maintenance and entrepreneurship skills from Class 5 onwards. Aligned with India Vision 2035 and Make in India."}},
@@ -121,61 +130,37 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-
-body{
-  font-family:'DM Sans',sans-serif;
-  background:#fff;
-  color:var(--text);
-  line-height:1.65;
-  overflow-x:hidden;
-}
+body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--text);line-height:1.65;overflow-x:hidden;}
 
 /* ── ANNOUNCEMENT BAR ── */
-.topbar{
-  background: linear-gradient(90deg, var(--navy) 0%, #1a3a6e 100%);
-  color:#fff;
-  text-align:center;
-  padding:10px 16px;
-  font-size:13px;
-  font-weight:500;
-  letter-spacing:.2px;
-  border-bottom:3px solid var(--saffron);
-}
+.topbar{background:linear-gradient(90deg,var(--navy) 0%,#1a3a6e 100%);color:#fff;text-align:center;padding:10px 16px;font-size:13px;font-weight:500;letter-spacing:.2px;border-bottom:3px solid var(--saffron);}
 .topbar strong{color:var(--gold)}
 .topbar a{color:var(--saffron2);text-decoration:none;font-weight:700;margin-left:10px}
 
+/* ── BREADCRUMB ── */
+.breadcrumb{background:var(--off);border-bottom:1px solid var(--border);padding:10px 5vw;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.breadcrumb a{color:var(--saffron);text-decoration:none;font-weight:600;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:var(--muted);}
+.bc-sep{color:var(--border);font-size:14px;}
+
+/* ── BACK LINKS BAR ── */
+.back-links{background:#fff;border-bottom:2px solid var(--border);padding:8px 5vw;display:flex;align-items:center;gap:16px;flex-wrap:wrap;overflow-x:auto;}
+.back-links a{font-size:12px;font-weight:700;color:var(--navy);text-decoration:none;white-space:nowrap;padding:5px 12px;border-radius:100px;background:var(--off);border:1px solid var(--border);transition:all .2s;}
+.back-links a:hover{background:var(--saffron-lt);border-color:var(--border2);color:var(--saffron);}
+.back-links a.active{background:var(--saffron);color:#fff;border-color:var(--saffron);}
+
 /* ── NAVBAR ── */
-nav{
-  position:sticky;top:0;z-index:200;
-  background:#fff;
-  box-shadow:0 2px 20px rgba(11,29,58,0.1);
-  padding:0 5vw;
-  display:flex;align-items:center;justify-content:space-between;
-  height:64px;
-  border-bottom:3px solid var(--saffron);
-}
+nav{position:sticky;top:0;z-index:200;background:#fff;box-shadow:0 2px 20px rgba(11,29,58,0.1);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:3px solid var(--saffron);}
 .nav-logo{text-decoration:none;display:flex;align-items:center;gap:12px}
-.logo-mark{
-  width:42px;height:42px;border-radius:10px;
-  background:linear-gradient(135deg,var(--saffron),var(--saffron2));
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Playfair Display',serif;
-  font-size:20px;font-weight:900;color:#fff;
-  flex-shrink:0;
-}
+.logo-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--saffron),var(--saffron2));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:#fff;flex-shrink:0;}
 .logo-text{display:flex;flex-direction:column;line-height:1.1}
 .logo-text .l1{font-family:'Playfair Display',serif;font-size:17px;font-weight:800;color:var(--navy)}
 .logo-text .l2{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
 .nav-links{display:flex;gap:26px;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;transition:color .2s;letter-spacing:.2px}
 .nav-links a:hover{color:var(--saffron)}
-.nav-cta{
-  background:var(--saffron);color:#fff;
-  padding:10px 22px;border-radius:8px;
-  font-size:13px;font-weight:700;text-decoration:none;
-  transition:background .2s,transform .2s;
-  white-space:nowrap;
-}
+.nav-cta{background:var(--saffron);color:#fff;padding:10px 22px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;transition:background .2s,transform .2s;white-space:nowrap;}
 .nav-cta:hover{background:var(--saffron2);transform:translateY(-1px)}
 .mob-nav{display:none;gap:12px;align-items:center}
 .mob-nav a{font-size:12px;font-weight:700;text-decoration:none}
@@ -183,147 +168,41 @@ nav{
 .mob-nav .m2{color:var(--navy)}
 
 /* ── HERO ── */
-.hero{
-  background:var(--navy);
-  position:relative;overflow:hidden;
-  padding:90px 5vw 80px;
-  min-height:88vh;
-  display:flex;align-items:center;
-}
-.hero-diagonal{
-  position:absolute;right:0;bottom:0;
-  width:55%;height:100%;
-  background:linear-gradient(145deg,transparent 30%,rgba(255,107,0,0.06) 100%);
-  clip-path:polygon(25% 0%,100% 0%,100% 100%,0% 100%);
-}
-.hero-dots{
-  position:absolute;inset:0;
-  background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);
-  background-size:32px 32px;
-}
-.hero-stripe{
-  position:absolute;left:0;top:0;width:6px;height:100%;
-  background:linear-gradient(180deg,var(--saffron) 33%,#fff 33% 66%,var(--green-in) 66%);
-}
+.hero{background:var(--navy);position:relative;overflow:hidden;padding:90px 5vw 80px;min-height:88vh;display:flex;align-items:center;}
+.hero-diagonal{position:absolute;right:0;bottom:0;width:55%;height:100%;background:linear-gradient(145deg,transparent 30%,rgba(255,107,0,0.06) 100%);clip-path:polygon(25% 0%,100% 0%,100% 100%,0% 100%);}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:32px 32px;}
+.hero-stripe{position:absolute;left:0;top:0;width:6px;height:100%;background:linear-gradient(180deg,var(--saffron) 33%,#fff 33% 66%,var(--green-in) 66%);}
 .hero-content{position:relative;z-index:2;max-width:700px}
-
-.hero-tagline{
-  display:inline-flex;align-items:center;gap:10px;
-  background:rgba(255,107,0,0.12);
-  border:1px solid rgba(255,107,0,0.3);
-  border-radius:100px;padding:7px 18px;
-  font-size:12px;font-weight:700;
-  color:var(--saffron2);
-  letter-spacing:.8px;text-transform:uppercase;
-  margin-bottom:28px;
-}
+.hero-tagline{display:inline-flex;align-items:center;gap:10px;background:rgba(255,107,0,0.12);border:1px solid rgba(255,107,0,0.3);border-radius:100px;padding:7px 18px;font-size:12px;font-weight:700;color:var(--saffron2);letter-spacing:.8px;text-transform:uppercase;margin-bottom:28px;}
 .hero-tagline .dot{width:8px;height:8px;border-radius:50%;background:var(--saffron);animation:blink 2s ease infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-
-.hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(38px,6vw,76px);
-  font-weight:900;
-  line-height:1.05;
-  color:#fff;
-  margin-bottom:8px;
-  letter-spacing:-1px;
-}
-.hero h1 .accent{
-  color:var(--saffron);
-  position:relative;
-  display:inline-block;
-}
-.hero h1 .accent::after{
-  content:'';
-  position:absolute;left:0;bottom:-4px;right:0;
-  height:3px;
-  background:linear-gradient(90deg,var(--saffron),transparent);
-}
-.hero-subtitle{
-  font-size:clamp(15px,1.8vw,19px);
-  color:rgba(255,255,255,0.65);
-  max-width:560px;
-  margin:22px 0 36px;
-  line-height:1.7;
-}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,6vw,76px);font-weight:900;line-height:1.05;color:#fff;margin-bottom:8px;letter-spacing:-1px;}
+.hero h1 .accent{color:var(--saffron);position:relative;display:inline-block;}
+.hero h1 .accent::after{content:'';position:absolute;left:0;bottom:-4px;right:0;height:3px;background:linear-gradient(90deg,var(--saffron),transparent);}
+.hero-subtitle{font-size:clamp(15px,1.8vw,19px);color:rgba(255,255,255,0.65);max-width:560px;margin:22px 0 36px;line-height:1.7;}
 .hero-subtitle strong{color:rgba(255,255,255,0.9);font-weight:600}
-
-.hero-mission{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  border-left:4px solid var(--saffron);
-  border-radius:0 10px 10px 0;
-  padding:16px 20px;
-  margin-bottom:36px;
-  font-size:14px;
-  color:rgba(255,255,255,0.7);
-  line-height:1.7;
-  max-width:600px;
-}
+.hero-mission{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-left:4px solid var(--saffron);border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:36px;font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7;max-width:600px;}
 .hero-mission strong{color:var(--saffron2)}
-
 .hero-stats{display:flex;gap:0;margin-bottom:40px;flex-wrap:wrap;border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;max-width:580px}
-.hstat{
-  flex:1;min-width:120px;
-  padding:18px 20px;
-  border-right:1px solid rgba(255,255,255,0.08);
-  background:rgba(255,255,255,0.03);
-}
+.hstat{flex:1;min-width:120px;padding:18px 20px;border-right:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);}
 .hstat:last-child{border-right:none}
 .hstat-n{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--saffron);line-height:1}
 .hstat-l{font-size:11px;color:rgba(255,255,255,0.5);margin-top:5px;font-weight:500;letter-spacing:.3px}
-
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn-fire{
-  background:var(--saffron);color:#fff;
-  padding:15px 30px;border-radius:10px;
-  font-weight:700;font-size:15px;text-decoration:none;
-  display:inline-flex;align-items:center;gap:8px;
-  box-shadow:0 8px 32px rgba(255,107,0,0.4);
-  transition:transform .2s,box-shadow .2s;
-}
+.btn-fire{background:var(--saffron);color:#fff;padding:15px 30px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 8px 32px rgba(255,107,0,0.4);transition:transform .2s,box-shadow .2s;}
 .btn-fire:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(255,107,0,0.5)}
-.btn-ghost{
-  background:transparent;color:#fff;
-  padding:15px 30px;border-radius:10px;
-  font-weight:600;font-size:15px;text-decoration:none;
-  border:1px solid rgba(255,255,255,0.2);
-  display:inline-flex;align-items:center;gap:8px;
-  transition:border-color .2s,background .2s;
-}
+.btn-ghost{background:transparent;color:#fff;padding:15px 30px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);display:inline-flex;align-items:center;gap:8px;transition:border-color .2s,background .2s;}
 .btn-ghost:hover{border-color:rgba(255,255,255,0.5);background:rgba(255,255,255,0.05)}
 
 /* ── INDIA TRUST BAND ── */
-.india-band{
-  background:linear-gradient(90deg,var(--saffron) 0%,var(--saffron2) 50%,#ff9a3c 100%);
-  padding:16px 5vw;
-  display:flex;align-items:center;justify-content:center;
-  gap:36px;flex-wrap:wrap;
-}
-.iband-item{
-  display:flex;align-items:center;gap:8px;
-  font-size:13px;font-weight:700;color:#fff;
-  white-space:nowrap;
-}
+.india-band{background:linear-gradient(90deg,var(--saffron) 0%,var(--saffron2) 50%,#ff9a3c 100%);padding:16px 5vw;display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap;}
+.iband-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#fff;white-space:nowrap;}
 .iband-sep{width:1px;height:20px;background:rgba(255,255,255,0.3)}
 
 /* ── SECTION BASE ── */
 section{padding:90px 5vw}
-.sec-badge{
-  display:inline-block;
-  background:var(--saffron-lt);color:var(--saffron);
-  font-size:11px;font-weight:700;letter-spacing:2px;
-  text-transform:uppercase;padding:5px 14px;
-  border-radius:100px;margin-bottom:14px;
-  border:1px solid rgba(255,107,0,0.2);
-}
-.sec-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(28px,4vw,50px);
-  font-weight:900;line-height:1.1;
-  color:var(--navy);margin-bottom:16px;
-}
+.sec-badge{display:inline-block;background:var(--saffron-lt);color:var(--saffron);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:14px;border:1px solid rgba(255,107,0,0.2);}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,50px);font-weight:900;line-height:1.1;color:var(--navy);margin-bottom:16px;}
 .sec-title em{font-style:normal;color:var(--saffron)}
 .sec-sub{font-size:16px;color:var(--muted);max-width:580px;line-height:1.7}
 
@@ -331,67 +210,67 @@ section{padding:90px 5vw}
 .mission-bg{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
 .mission-pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
-.pillar{
-  background:#fff;border:1px solid var(--border);
-  border-radius:var(--r);padding:22px 20px;
-  border-top:3px solid var(--saffron);
-  transition:transform .2s,box-shadow .2s;
-}
+.pillar{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:22px 20px;border-top:3px solid var(--saffron);transition:transform .2s,box-shadow .2s;}
 .pillar:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(11,29,58,0.08)}
 .pillar-ico{font-size:26px;margin-bottom:10px}
 .pillar h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px}
 .pillar p{font-size:12px;color:var(--muted);line-height:1.6}
-
-.vision-card{
-  background:var(--navy);border-radius:var(--r2);
-  padding:44px 40px;color:#fff;
-  border-top:4px solid var(--saffron);
-  position:relative;overflow:hidden;
-}
-.vision-card::before{
-  content:'2035';
-  position:absolute;right:-20px;bottom:-30px;
-  font-family:'Playfair Display',serif;
-  font-size:120px;font-weight:900;
-  color:rgba(255,107,0,0.06);
-  line-height:1;pointer-events:none;
-}
+.vision-card{background:var(--navy);border-radius:var(--r2);padding:44px 40px;color:#fff;border-top:4px solid var(--saffron);position:relative;overflow:hidden;}
+.vision-card::before{content:'2035';position:absolute;right:-20px;bottom:-30px;font-family:'Playfair Display',serif;font-size:120px;font-weight:900;color:rgba(255,107,0,0.06);line-height:1;pointer-events:none;}
 .vision-card h3{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:#fff;margin-bottom:16px}
 .vision-card h3 span{color:var(--saffron)}
 .vision-list{list-style:none;margin-top:20px}
-.vision-list li{
-  display:flex;align-items:flex-start;gap:12px;
-  font-size:14px;color:rgba(255,255,255,0.7);
-  padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);
-  line-height:1.5;
-}
+.vision-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:rgba(255,255,255,0.7);padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);line-height:1.5;}
 .vision-list li:last-child{border-bottom:none}
 .vision-list li::before{content:'▸';color:var(--saffron);font-size:12px;margin-top:2px;flex-shrink:0}
 .vision-cta-row{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
 
-/* ── FUNNEL JOURNEY ── */
-.funnel-wrap{margin-top:60px;position:relative}
-.funnel-connector{
-  position:absolute;left:calc(50% - 1px);top:60px;bottom:60px;
-  width:2px;background:linear-gradient(180deg,var(--saffron),var(--green-in));
+/* ══════════════════════════════════════════
+   FUNNEL JOURNEY — FULLY RESPONSIVE FIX
+══════════════════════════════════════════ */
+.funnel-section{padding:90px 5vw;}
+.funnel-header{text-align:center;max-width:700px;margin:0 auto 60px;}
+
+/* DESKTOP: alternating left/right */
+.funnel-wrap{position:relative;max-width:900px;margin:0 auto;}
+.funnel-line{
+  position:absolute;
+  left:50%;
+  top:28px;
+  bottom:28px;
+  width:3px;
+  transform:translateX(-50%);
+  background:linear-gradient(180deg,var(--saffron),var(--green-in));
   z-index:0;
+  border-radius:99px;
 }
-.funnel-steps{display:flex;flex-direction:column;gap:24px;position:relative;z-index:1}
 .fstep{
-  display:grid;grid-template-columns:1fr 80px 1fr;
-  align-items:center;gap:20px;
+  display:grid;
+  grid-template-columns:1fr 80px 1fr;
+  align-items:center;
+  gap:20px;
+  margin-bottom:32px;
+  position:relative;
+  z-index:1;
 }
+.fstep:last-child{margin-bottom:0;}
+/* Right-side steps: content on right, blank on left */
+.fstep.right .fstep-blank{order:1;}
+.fstep.right .fstep-center{order:2;}
+.fstep.right .fstep-content{order:3;}
+/* Left-side steps: default order is content,center,blank */
 .fstep-content{
-  background:#fff;border:1px solid var(--border);
-  border-radius:var(--r2);padding:28px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r2);
+  padding:28px;
   box-shadow:0 4px 20px rgba(11,29,58,0.05);
   transition:border-color .2s,transform .2s;
 }
-.fstep-content:hover{border-color:var(--border2);transform:translateX(-4px)}
-.fstep.right .fstep-content:hover{transform:translateX(4px)}
-.fstep-center{
-  display:flex;flex-direction:column;align-items:center;gap:6px;
-}
+.fstep-content:hover{border-color:var(--border2);}
+.fstep.left .fstep-content:hover{transform:translateX(-4px);}
+.fstep.right .fstep-content:hover{transform:translateX(4px);}
+.fstep-center{display:flex;flex-direction:column;align-items:center;gap:6px;}
 .step-node{
   width:54px;height:54px;border-radius:50%;
   background:var(--saffron);
@@ -400,63 +279,89 @@ section{padding:90px 5vw}
   font-size:20px;font-weight:900;color:#fff;
   box-shadow:0 0 0 6px rgba(255,107,0,0.12);
   flex-shrink:0;
+  position:relative;z-index:2;
 }
-.step-node.green{background:var(--green-in);box-shadow:0 0 0 6px rgba(19,136,8,0.12)}
-.step-node.navy{background:var(--navy);box-shadow:0 0 0 6px rgba(11,29,58,0.12)}
-.fstep.right .fstep-content{order:3}
-.fstep.right .fstep-center{order:2}
-.fstep.right .fstep-blank{order:1}
-.fstep-blank{/* placeholder */}
+.step-node.green{background:var(--green-in);box-shadow:0 0 0 6px rgba(19,136,8,0.12);}
+.step-node.navy{background:var(--navy);box-shadow:0 0 0 6px rgba(11,29,58,0.12);}
+.step-node.gold{background:linear-gradient(135deg,var(--saffron),var(--saffron2));box-shadow:0 0 0 6px rgba(255,107,0,0.15);}
 .fstep-content h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px}
 .fstep-content p{font-size:13px;color:var(--muted);line-height:1.6}
-.fstep-cta{
-  display:inline-block;margin-top:14px;
-  font-size:12px;font-weight:700;color:var(--saffron);
-  text-decoration:none;
-}
+.fstep-cta{display:inline-block;margin-top:14px;font-size:12px;font-weight:700;color:var(--saffron);text-decoration:none;}
 .fstep-cta::after{content:' →'}
+.fstep-blank{/* spacer */}
+
+/* MOBILE: vertical timeline — single column */
+@media(max-width:768px){
+  .funnel-line{display:none;}
+  .fstep{
+    display:flex !important;
+    flex-direction:column !important;
+    grid-template-columns:unset !important;
+    align-items:flex-start !important;
+    padding-left:70px;
+    position:relative;
+    margin-bottom:0;
+  }
+  /* All steps: hide blank, show node on the left as absolute */
+  .fstep-blank{display:none !important;}
+  .fstep-center{
+    position:absolute;
+    left:0;
+    top:24px;
+    width:52px;
+    display:flex !important;
+    order:unset !important;
+    flex-direction:column;
+    align-items:center;
+  }
+  /* Restore natural order for right steps on mobile */
+  .fstep.right .fstep-blank{order:unset;}
+  .fstep.right .fstep-center{order:unset;}
+  .fstep.right .fstep-content{order:unset;}
+
+  .fstep-content{
+    width:100%;
+    transform:none !important;
+    margin-bottom:0;
+  }
+  .step-node{width:44px;height:44px;font-size:17px;}
+
+  /* Vertical connector between steps */
+  .funnel-steps-wrap{
+    position:relative;
+    padding-left:0;
+  }
+  .funnel-steps-wrap::before{
+    content:'';
+    position:absolute;
+    left:22px;
+    top:48px;
+    bottom:48px;
+    width:3px;
+    background:linear-gradient(180deg,var(--saffron),var(--green-in));
+    border-radius:99px;
+    z-index:0;
+  }
+  .fstep{
+    padding-bottom:28px;
+    z-index:1;
+  }
+}
 
 /* ── PROGRAMMES GRID ── */
 .programmes-bg{background:var(--navy);border-top:4px solid var(--saffron)}
 .programmes-bg .sec-title{color:#fff}
 .programmes-bg .sec-sub{color:rgba(255,255,255,0.55)}
 .programmes-bg .sec-badge{background:rgba(255,107,0,0.15);color:var(--saffron2);border-color:rgba(255,107,0,0.3)}
-
-.prog-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
-  gap:20px;margin-top:50px;
-}
-.prog-card{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:var(--r2);padding:28px;
-  transition:border-color .2s,background .2s,transform .2s;
-  position:relative;overflow:hidden;
-}
-.prog-card::before{
-  content:'';
-  position:absolute;top:0;left:0;right:0;height:3px;
-  background:var(--saffron);opacity:0;
-  transition:opacity .2s;
-}
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;margin-top:50px;}
+.prog-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r2);padding:28px;transition:border-color .2s,background .2s,transform .2s;position:relative;overflow:hidden;}
+.prog-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--saffron);opacity:0;transition:opacity .2s;}
 .prog-card:hover{border-color:rgba(255,107,0,0.3);background:rgba(255,107,0,0.04);transform:translateY(-3px)}
 .prog-card:hover::before{opacity:1}
-.prog-card.star{
-  border-color:rgba(255,107,0,0.35);
-  background:rgba(255,107,0,0.06);
-}
+.prog-card.star{border-color:rgba(255,107,0,0.35);background:rgba(255,107,0,0.06);}
 .prog-card.star::before{opacity:1}
-.prog-ico{
-  font-size:32px;margin-bottom:14px;
-  display:block;
-}
-.prog-tag{
-  display:inline-block;
-  font-size:10px;font-weight:700;letter-spacing:1px;
-  text-transform:uppercase;padding:3px 10px;
-  border-radius:100px;margin-bottom:12px;
-}
+.prog-ico{font-size:32px;margin-bottom:14px;display:block;}
+.prog-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:12px;}
 .t-eng{background:rgba(0,150,255,0.15);color:#60c0ff}
 .t-mgmt{background:rgba(255,107,0,0.15);color:var(--saffron2)}
 .t-ai{background:rgba(160,80,255,0.15);color:#c090ff}
@@ -466,105 +371,48 @@ section{padding:90px 5vw}
 .t-acad{background:rgba(80,200,200,0.15);color:#60d0d0}
 .t-proc{background:rgba(255,100,80,0.15);color:#ff9080}
 .t-mega{background:rgba(255,107,0,0.2);color:var(--saffron2);border:1px solid rgba(255,107,0,0.3)}
-
 .prog-card h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:8px}
 .prog-card p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;margin-bottom:16px}
 .prog-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
 .prog-dur{font-size:11px;color:rgba(255,255,255,0.4)}
 .prog-price{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--saffron)}
-.prog-btn{
-  display:block;text-align:center;
-  background:rgba(255,107,0,0.12);
-  border:1px solid rgba(255,107,0,0.3);
-  color:var(--saffron2);text-decoration:none;
-  padding:11px;border-radius:8px;
-  font-size:13px;font-weight:700;
-  transition:background .2s,color .2s;
-}
+.prog-btn{display:block;text-align:center;background:rgba(255,107,0,0.12);border:1px solid rgba(255,107,0,0.3);color:var(--saffron2);text-decoration:none;padding:11px;border-radius:8px;font-size:13px;font-weight:700;transition:background .2s,color .2s;}
 .prog-btn:hover{background:var(--saffron);color:#fff}
 .star .prog-btn{background:var(--saffron);color:#fff}
 .star .prog-btn:hover{background:var(--saffron2)}
-.mega-card{
-  grid-column:1/-1;
-  background:linear-gradient(135deg,rgba(255,107,0,0.12),rgba(11,29,58,0.5));
-  border-color:rgba(255,107,0,0.4);
-}
+.mega-card{grid-column:1/-1;background:linear-gradient(135deg,rgba(255,107,0,0.12),rgba(11,29,58,0.5));border-color:rgba(255,107,0,0.4);}
 .mega-card::before{opacity:1}
 .mega-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .mega-list{list-style:none;margin-top:12px;margin-bottom:20px}
-.mega-list li{
-  font-size:13px;color:rgba(255,255,255,0.65);
-  padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);
-  display:flex;align-items:center;gap:10px;
-}
+.mega-list li{font-size:13px;color:rgba(255,255,255,0.65);padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:10px;}
 .mega-list li::before{content:'✓';color:var(--saffron);font-weight:700;font-size:13px}
 .mega-right{display:flex;flex-direction:column;gap:16px}
 .mega-price-big{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:var(--saffron);line-height:1}
 .mega-price-sub{font-size:13px;color:rgba(255,255,255,0.4);margin-top:4px}
 
 /* ── WHO CAN JOIN ── */
-.who-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;margin-top:50px;
-}
-.who-card{
-  background:#fff;border:1px solid var(--border);
-  border-radius:var(--r2);padding:28px 22px;
-  text-align:center;
-  transition:border-color .2s,transform .2s,box-shadow .2s;
-  border-bottom:3px solid transparent;
-}
-.who-card:hover{
-  border-color:var(--border2);
-  border-bottom-color:var(--saffron);
-  transform:translateY(-4px);
-  box-shadow:0 12px 40px rgba(255,107,0,0.1);
-}
+.who-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:50px;}
+.who-card{background:#fff;border:1px solid var(--border);border-radius:var(--r2);padding:28px 22px;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s;border-bottom:3px solid transparent;}
+.who-card:hover{border-color:var(--border2);border-bottom-color:var(--saffron);transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,107,0,0.1);}
 .who-ico{font-size:38px;margin-bottom:14px;display:block}
 .who-card h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px}
 .who-card p{font-size:12px;color:var(--muted);line-height:1.6}
 
 /* ── INDIA REVOLUTION SECTION ── */
-.revolution-bg{
-  background:linear-gradient(135deg,var(--navy) 0%,#0f2850 50%,#1a3a6e 100%);
-  position:relative;overflow:hidden;
-}
-.revolution-bg::before{
-  content:'';
-  position:absolute;inset:0;
-  background-image:radial-gradient(rgba(255,107,0,0.04) 1px,transparent 1px);
-  background-size:28px 28px;
-}
+.revolution-bg{background:linear-gradient(135deg,var(--navy) 0%,#0f2850 50%,#1a3a6e 100%);position:relative;overflow:hidden;}
+.revolution-bg::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,107,0,0.04) 1px,transparent 1px);background-size:28px 28px;}
 .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative;z-index:1}
 .rev-left .sec-title{color:#fff}
 .rev-left .sec-sub{color:rgba(255,255,255,0.55)}
 .rev-left .sec-badge{background:rgba(255,107,0,0.15);color:var(--saffron2);border-color:rgba(255,107,0,0.3)}
-.india-flag-stripe{
-  display:flex;height:5px;border-radius:100px;
-  overflow:hidden;margin:24px 0;width:200px;
-}
+.india-flag-stripe{display:flex;height:5px;border-radius:100px;overflow:hidden;margin:24px 0;width:200px;}
 .flag-s1{flex:1;background:var(--saffron)}
 .flag-s2{flex:1;background:#fff}
 .flag-s3{flex:1;background:var(--green-in)}
-.rev-quote{
-  font-family:'Playfair Display',serif;
-  font-size:22px;font-weight:700;
-  color:#fff;line-height:1.4;
-  border-left:4px solid var(--saffron);
-  padding:16px 20px;
-  margin:28px 0;
-  background:rgba(255,255,255,0.04);
-  border-radius:0 10px 10px 0;
-}
+.rev-quote{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;line-height:1.4;border-left:4px solid var(--saffron);padding:16px 20px;margin:28px 0;background:rgba(255,255,255,0.04);border-radius:0 10px 10px 0;}
 .rev-quote em{font-style:normal;color:var(--saffron)}
-
 .make-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.make-card{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:var(--r);padding:22px;
-  transition:border-color .2s;
-}
+.make-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r);padding:22px;transition:border-color .2s;}
 .make-card:hover{border-color:rgba(255,107,0,0.3)}
 .make-card-ico{font-size:24px;margin-bottom:10px}
 .make-card h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
@@ -572,51 +420,24 @@ section{padding:90px 5vw}
 
 /* ── SERVICES ── */
 .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:50px}
-.svc-card{
-  background:#fff;border:1px solid var(--border);
-  border-radius:var(--r2);padding:32px 28px;
-  transition:transform .2s,box-shadow .2s;
-}
+.svc-card{background:#fff;border:1px solid var(--border);border-radius:var(--r2);padding:32px 28px;transition:transform .2s,box-shadow .2s;}
 .svc-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(11,29,58,0.1)}
-.svc-ico-wrap{
-  width:56px;height:56px;border-radius:14px;
-  background:var(--saffron-lt);border:1px solid rgba(255,107,0,0.2);
-  display:flex;align-items:center;justify-content:center;
-  font-size:26px;margin-bottom:20px;
-}
+.svc-ico-wrap{width:56px;height:56px;border-radius:14px;background:var(--saffron-lt);border:1px solid rgba(255,107,0,0.2);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:20px;}
 .svc-card h3{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px}
 .svc-card p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
 .svc-items{list-style:none}
-.svc-items li{
-  font-size:13px;color:var(--muted);
-  padding:6px 0;border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:8px;
-}
+.svc-items li{font-size:13px;color:var(--muted);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;}
 .svc-items li::before{content:'▸';color:var(--saffron);font-size:11px}
 
 /* ── LOCAL SEO + CONTACT ── */
 .local-bg{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .local-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
 .location-tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
-.ltag{
-  background:#fff;border:1px solid var(--border);
-  padding:6px 14px;border-radius:100px;
-  font-size:12px;color:var(--muted);font-weight:500;
-}
-.contact-box{
-  background:#fff;border:1px solid var(--border);
-  border-radius:var(--r2);padding:36px;
-  box-shadow:0 8px 40px rgba(11,29,58,0.07);
-  border-top:4px solid var(--saffron);
-}
+.ltag{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:100px;font-size:12px;color:var(--muted);font-weight:500;}
+.contact-box{background:#fff;border:1px solid var(--border);border-radius:var(--r2);padding:36px;box-shadow:0 8px 40px rgba(11,29,58,0.07);border-top:4px solid var(--saffron);}
 .contact-box h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:var(--navy);margin-bottom:28px}
 .crow{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.cico{
-  width:44px;height:44px;border-radius:11px;
-  background:var(--saffron-lt);border:1px solid rgba(255,107,0,0.2);
-  display:flex;align-items:center;justify-content:center;
-  font-size:20px;flex-shrink:0;
-}
+.cico{width:44px;height:44px;border-radius:11px;background:var(--saffron-lt);border:1px solid rgba(255,107,0,0.2);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
 .cinfo a{color:var(--navy);text-decoration:none;font-weight:700;font-size:15px;display:block}
 .cinfo a:hover{color:var(--saffron)}
 .cinfo span{font-size:12px;color:var(--muted)}
@@ -626,94 +447,54 @@ section{padding:90px 5vw}
 .ccall{background:var(--navy);color:#fff;text-align:center;padding:13px;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px;transition:opacity .2s}
 .ccall:hover{opacity:.88}
 
-/* ── PROOF / TESTIMONIALS ── */
-.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:50px}
-.proof-card{
-  background:#fff;border:1px solid var(--border);
-  border-radius:var(--r2);padding:28px;
-  border-bottom:3px solid var(--saffron);
-}
+/* ── TESTIMONIALS ── */
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:32px}
+.proof-card{background:#fff;border:1px solid var(--border);border-radius:var(--r2);padding:28px;border-bottom:3px solid var(--saffron);}
 .proof-stars{color:var(--saffron);font-size:15px;margin-bottom:14px;letter-spacing:3px}
 .proof-text{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:20px;font-style:italic}
 .proof-author{display:flex;align-items:center;gap:12px}
-.proof-av{
-  width:42px;height:42px;border-radius:50%;
-  background:linear-gradient(135deg,var(--saffron),var(--saffron2));
-  display:flex;align-items:center;justify-content:center;
-  font-weight:700;font-size:14px;color:#fff;flex-shrink:0;
-}
+.proof-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--saffron2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;flex-shrink:0;}
 .proof-name{font-size:14px;font-weight:700;color:var(--navy)}
 .proof-loc{font-size:12px;color:var(--muted)}
 
 /* ── FAQ ── */
 .faq-bg{background:var(--off);border-top:1px solid var(--border)}
 .faq-inner{max-width:740px;margin:50px auto 0}
-.faq-item{
-  border:1px solid var(--border);border-radius:var(--r);
-  margin-bottom:12px;overflow:hidden;background:#fff;
-}
-.faq-q{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:20px 24px;cursor:pointer;
-  font-size:15px;font-weight:600;color:var(--navy);
-  transition:background .2s;user-select:none;
-}
+.faq-item{border:1px solid var(--border);border-radius:var(--r);margin-bottom:12px;overflow:hidden;background:#fff;}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);transition:background .2s;user-select:none;}
 .faq-q:hover{background:var(--off)}
-.faq-arr{
-  color:var(--saffron);font-size:20px;
-  font-weight:700;transition:transform .3s;
-  flex-shrink:0;margin-left:12px;
-}
-.faq-a{
-  max-height:0;overflow:hidden;
-  transition:max-height .35s ease,padding .3s;
-  font-size:14px;color:var(--muted);line-height:1.7;
-  padding:0 24px;
-  border-top:0 solid var(--border);
-}
+.faq-arr{color:var(--saffron);font-size:20px;font-weight:700;transition:transform .3s;flex-shrink:0;margin-left:12px;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;font-size:14px;color:var(--muted);line-height:1.7;padding:0 24px;border-top:0 solid var(--border);}
 .faq-item.open .faq-a{max-height:250px;padding:16px 24px 22px;border-top-width:1px}
 .faq-item.open .faq-arr{transform:rotate(45deg)}
 
 /* ── CTA BANNER ── */
 .cta-sec{padding:80px 5vw}
-.cta-inner{
-  background:linear-gradient(135deg,var(--navy) 0%,#0f2850 100%);
-  border-radius:28px;padding:70px 60px;
-  text-align:center;position:relative;overflow:hidden;
-  border-top:5px solid var(--saffron);
-}
-.cta-inner::before{
-  content:'';position:absolute;inset:0;
-  background-image:radial-gradient(rgba(255,107,0,0.06) 1.5px,transparent 1.5px);
-  background-size:24px 24px;
-}
-.cta-inner h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(28px,4vw,52px);font-weight:900;
-  color:#fff;margin-bottom:14px;position:relative;z-index:1;
-}
+.cta-inner{background:linear-gradient(135deg,var(--navy) 0%,#0f2850 100%);border-radius:28px;padding:70px 60px;text-align:center;position:relative;overflow:hidden;border-top:5px solid var(--saffron);}
+.cta-inner::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,107,0,0.06) 1.5px,transparent 1.5px);background-size:24px 24px;}
+.cta-inner h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,52px);font-weight:900;color:#fff;margin-bottom:14px;position:relative;z-index:1;}
 .cta-inner h2 span{color:var(--saffron)}
 .cta-inner p{font-size:17px;color:rgba(255,255,255,0.6);margin-bottom:36px;position:relative;z-index:1}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
 
+/* ── BLOG TEASER ── */
+.blog-teaser-bg{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:40px;}
+.blog-card{background:#fff;border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;transition:transform .2s,box-shadow .2s;}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(11,29,58,0.1);}
+.blog-cat{display:inline-block;background:var(--saffron-lt);color:var(--saffron);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:100px;margin-bottom:10px;}
+.blog-body{padding:24px;}
+.blog-card h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.4;}
+.blog-card p{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:14px;}
+.blog-read{font-size:12px;font-weight:700;color:var(--saffron);text-decoration:none;}
+.blog-read::after{content:' →';}
+.blog-meta{font-size:11px;color:var(--muted);padding:12px 24px;border-top:1px solid var(--border);background:var(--off);}
+
 /* ── FOOTER ── */
-footer{
-  background:var(--navy);
-  border-top:4px solid var(--saffron);
-  padding:60px 5vw 30px;
-  color:rgba(255,255,255,0.55);
-}
+footer{background:var(--navy);border-top:4px solid var(--saffron);padding:60px 5vw 30px;color:rgba(255,255,255,0.55);}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;margin-bottom:50px}
-.foot-brand .flogo{
-  display:flex;align-items:center;gap:12px;margin-bottom:16px;
-}
-.foot-brand .flogo-mark{
-  width:44px;height:44px;border-radius:10px;
-  background:var(--saffron);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Playfair Display',serif;
-  font-size:20px;font-weight:900;color:#fff;flex-shrink:0;
-}
+.foot-brand .flogo{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.foot-brand .flogo-mark{width:44px;height:44px;border-radius:10px;background:var(--saffron);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:#fff;flex-shrink:0;}
 .foot-brand .flogo-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:#fff}
 .foot-brand .flogo-sub{font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase}
 .foot-brand p{font-size:13px;line-height:1.7;color:rgba(255,255,255,0.45)}
@@ -722,55 +503,32 @@ footer{
 .foot-col a:hover{color:var(--saffron)}
 .foot-seo{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
 .foot-kw{font-size:10px;color:rgba(255,255,255,0.15);background:rgba(255,255,255,0.04);padding:3px 8px;border-radius:4px}
-.foot-bottom{
-  border-top:1px solid rgba(255,255,255,0.07);
-  padding-top:24px;display:flex;justify-content:space-between;
-  align-items:center;flex-wrap:wrap;gap:10px;
-  font-size:12px;
-}
+.foot-bottom{border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;}
 .foot-flag{display:flex;gap:3px}
 .foot-flag span{width:18px;height:6px;border-radius:2px}
 .ff1{background:var(--saffron)}
 .ff2{background:#fff}
 .ff3{background:var(--green-in)}
 
-/* ── FLOAT WA ── */
-.float-wa{
-  position:fixed;bottom:28px;right:28px;z-index:999;
-  width:60px;height:60px;border-radius:50%;
-  background:#25d366;color:#fff;
-  display:flex;align-items:center;justify-content:center;
-  font-size:28px;text-decoration:none;
-  box-shadow:0 6px 28px rgba(37,211,102,0.5);
-  animation:wapulse 2.5s ease infinite;
-}
-@keyframes wapulse{
-  0%,100%{box-shadow:0 6px 28px rgba(37,211,102,0.5),0 0 0 0 rgba(37,211,102,0.4)}
-  50%{box-shadow:0 6px 28px rgba(37,211,102,0.5),0 0 0 14px rgba(37,211,102,0)}
-}
+/* ── FLOATING WA ── */
+.float-wa{position:fixed;bottom:28px;right:28px;z-index:999;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 28px rgba(37,211,102,0.5);animation:wapulse 2.5s ease infinite;}
+@keyframes wapulse{0%,100%{box-shadow:0 6px 28px rgba(37,211,102,0.5),0 0 0 0 rgba(37,211,102,0.4)}50%{box-shadow:0 6px 28px rgba(37,211,102,0.5),0 0 0 14px rgba(37,211,102,0)}}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   .mission-grid,.rev-grid,.local-layout{grid-template-columns:1fr;gap:40px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
   .mega-inner{grid-template-columns:1fr}
-  .fstep{grid-template-columns:1fr 56px 1fr}
 }
 @media(max-width:768px){
   .nav-links,.nav-cta{display:none}
   .mob-nav{display:flex}
   section{padding:60px 5vw}
-  .funnel-connector{display:none}
-  .fstep{
-    grid-template-columns:56px 1fr;
-    grid-template-rows:auto;
-  }
-  .fstep-blank{display:none}
-  .fstep.right .fstep-content{order:2}
-  .fstep.right .fstep-center{order:1}
+  .funnel-section{padding:60px 5vw;}
   .cta-inner{padding:44px 28px}
   .hero-stats{display:grid;grid-template-columns:1fr 1fr}
   .hstat{border-bottom:1px solid rgba(255,255,255,0.08)}
+  .back-links{gap:8px;}
 }
 @media(max-width:500px){
   .foot-grid{grid-template-columns:1fr}
@@ -792,7 +550,7 @@ footer{
 
 <!-- NAVBAR -->
 <nav role="navigation" aria-label="Main Navigation">
-  <a href="#" class="nav-logo" aria-label="HM Academy Home">
+  <a href="index.html" class="nav-logo" aria-label="HM Academy Home">
     <div class="logo-mark" aria-hidden="true">HM</div>
     <div class="logo-text">
       <span class="l1">HM Academy</span>
@@ -800,11 +558,13 @@ footer{
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="#mission">Our Mission</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#mission">Mission</a></li>
     <li><a href="#programmes">Programmes</a></li>
     <li><a href="#who">Who Can Join</a></li>
     <li><a href="#india">India 2035</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a class="nav-cta" href="https://wa.me/919650329719?text=I%20want%20to%20join%20HM%20Academy%20-%20please%20share%20details" rel="noopener" target="_blank">🎓 Join the Revolution</a>
@@ -813,6 +573,27 @@ footer{
     <a class="m2" href="tel:+919650329719">📞 Call</a>
   </div>
 </nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html">🏠 Home</a>
+  <span class="bc-sep">›</span>
+  <span>HM Academy — Engineering &amp; Entrepreneurship Training, Fatehpur UP</span>
+</nav>
+
+<!-- QUICK BACK LINKS -->
+<div class="back-links" role="navigation" aria-label="Quick Navigation">
+  <a href="index.html" class="active">🏠 Home</a>
+  <a href="#mission">🎯 Our Mission</a>
+  <a href="#programmes">📚 All Programmes</a>
+  <a href="#who">👥 Who Can Join</a>
+  <a href="#india">🇮🇳 India 2035</a>
+  <a href="#services">🔧 Services</a>
+  <a href="blog.html">✍️ Blog &amp; Articles</a>
+  <a href="#faq">❓ FAQ</a>
+  <a href="#contact">📞 Contact</a>
+  <a href="https://wa.me/919650329719" target="_blank" rel="noopener">💬 WhatsApp Sir</a>
+</div>
 
 <!-- HERO -->
 <header class="hero" id="home" itemscope itemtype="https://schema.org/EducationalOrganization">
@@ -860,7 +641,7 @@ footer{
 </header>
 
 <!-- INDIA BAND -->
-<div class="india-band" role="complementary" aria-label="Certifications and commitments">
+<div class="india-band" role="complementary" aria-label="Trust indicators">
   <div class="iband-item">🇮🇳 Make in India Aligned</div>
   <div class="iband-sep" aria-hidden="true"></div>
   <div class="iband-item">🏛️ Registered Society</div>
@@ -936,18 +717,22 @@ footer{
   </div>
 </section>
 
-<!-- FUNNEL JOURNEY -->
-<section aria-labelledby="funnel-heading">
-  <div style="text-align:center;max-width:700px;margin:0 auto">
+<!-- FUNNEL JOURNEY — FULLY FIXED FOR MOBILE -->
+<section class="funnel-section" aria-labelledby="funnel-heading">
+  <div class="funnel-header">
     <div class="sec-badge">Your Path</div>
     <h2 class="sec-title" id="funnel-heading">From Weak Student to <em>Entrepreneur</em> — Step by Step</h2>
     <p class="sec-sub" style="margin:0 auto">Your journey with HM Academy is structured, proven and aligned with India's future economy.</p>
   </div>
-  <div class="funnel-wrap">
-    <div class="funnel-connector" aria-hidden="true"></div>
-    <div class="funnel-steps" role="list">
 
-      <div class="fstep" role="listitem">
+  <div class="funnel-wrap">
+    <!-- Desktop vertical line -->
+    <div class="funnel-line" aria-hidden="true"></div>
+
+    <div class="funnel-steps-wrap" role="list">
+
+      <!-- STEP 1 — LEFT -->
+      <div class="fstep left" role="listitem">
         <div class="fstep-content">
           <h3>🎯 Free Counselling & Gap Analysis</h3>
           <p>One free 15-minute call with Syed Hilaluddin Madany. We understand where you are — Class 5 student, ITI graduate, job seeker or working professional — and map the shortest path to your goal.</p>
@@ -959,6 +744,7 @@ footer{
         <div class="fstep-blank"></div>
       </div>
 
+      <!-- STEP 2 — RIGHT -->
       <div class="fstep right" role="listitem">
         <div class="fstep-blank"></div>
         <div class="fstep-center">
@@ -971,7 +757,8 @@ footer{
         </div>
       </div>
 
-      <div class="fstep" role="listitem">
+      <!-- STEP 3 — LEFT -->
+      <div class="fstep left" role="listitem">
         <div class="fstep-content">
           <h3>🛠️ Learn with Live Tools & Real Projects</h3>
           <p>ASHRAE HVAC calculators, FM energy tools, Python automation, GitHub portfolio, AI productivity tools, procurement templates. Real skills, not just theory — from Day One.</p>
@@ -983,6 +770,7 @@ footer{
         <div class="fstep-blank"></div>
       </div>
 
+      <!-- STEP 4 — RIGHT -->
       <div class="fstep right" role="listitem">
         <div class="fstep-blank"></div>
         <div class="fstep-center">
@@ -995,20 +783,21 @@ footer{
         </div>
       </div>
 
-      <div class="fstep" role="listitem">
+      <!-- STEP 5 — LEFT -->
+      <div class="fstep left" role="listitem">
         <div class="fstep-content">
           <h3>🚀 Launch Your Startup or Land the Job</h3>
           <p>With entrepreneurship skills, digital marketing, sales and procurement knowledge — start your own business nationally or internationally. Or take your Gulf/India job with full confidence. No MBA needed.</p>
           <a href="https://wa.me/919650329719?text=I%20am%20ready%20to%20start" class="fstep-cta" rel="noopener" target="_blank">Start Now</a>
         </div>
         <div class="fstep-center">
-          <div class="step-node" style="background:linear-gradient(135deg,var(--saffron),var(--saffron2));box-shadow:0 0 0 6px rgba(255,107,0,0.15)" aria-label="Step 5">5</div>
+          <div class="step-node gold" aria-label="Step 5">5</div>
         </div>
         <div class="fstep-blank"></div>
       </div>
 
-    </div>
-  </div>
+    </div><!-- /funnel-steps-wrap -->
+  </div><!-- /funnel-wrap -->
 </section>
 
 <!-- PROGRAMMES -->
@@ -1018,7 +807,6 @@ footer{
   <p class="sec-sub">Weekday &amp; weekend. In-person in Khalilnagar, Fatehpur or online across India. Every course includes live tools, career guidance &amp; entrepreneurship mindset.</p>
 
   <div class="prog-grid" role="list">
-
     <div class="prog-card star" role="listitem" itemscope itemtype="https://schema.org/Course">
       <span class="prog-ico">❄️</span>
       <span class="prog-tag t-eng">Most Popular</span>
@@ -1155,7 +943,6 @@ footer{
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -1164,49 +951,17 @@ footer{
   <div style="text-align:center;max-width:680px;margin:0 auto">
     <div class="sec-badge">No Barriers</div>
     <h2 class="sec-title" id="who-heading">Who Can Join <em>HM Academy?</em></h2>
-    <p class="sec-sub" style="margin:0 auto">HM Academy is for everyone — irrespective of board, grades, or background. Rural or urban, student or professional. The revolution is for all.</p>
+    <p class="sec-sub" style="margin:0 auto">HM Academy is for everyone — irrespective of board, grades, or background. Rural or urban, student or professional.</p>
   </div>
   <div class="who-grid" role="list">
-    <div class="who-card" role="listitem">
-      <span class="who-ico">🏫</span>
-      <h4>Class 5–10 Students</h4>
-      <p>Strong academic foundation, STEM skills, AI literacy — from rural Fatehpur UP to global-ready from a young age.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">🎓</span>
-      <h4>School &amp; College Graduates</h4>
-      <p>No job? Wrong degree? Build engineering, management and digital skills that the market actually needs right now.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">🔧</span>
-      <h4>ITI &amp; Diploma Holders</h4>
-      <p>Your degree is not useless. Add HVAC, FM, Python and Gulf job strategy — and command a salary you deserve.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">⚙️</span>
-      <h4>B.Tech Engineers</h4>
-      <p>Specialize in HVAC, MEP, AI, procurement or sales. Build a Gulf-ready portfolio and international career.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">💼</span>
-      <h4>Working Professionals</h4>
-      <p>Evening and weekend batches designed for you. Upskill in AI, management, sales without leaving your current job.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">👩‍💼</span>
-      <h4>Non-Technical People</h4>
-      <p>Procurement, site supervision, maintenance engineering, sales — skills you can learn without a technical background.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">🌍</span>
-      <h4>Gulf Job Aspirants</h4>
-      <p>UAE, Saudi Arabia, Qatar, Oman — full Gulf job preparation including resume, strategy and interview coaching.</p>
-    </div>
-    <div class="who-card" role="listitem">
-      <span class="who-ico">🚀</span>
-      <h4>Future Entrepreneurs</h4>
-      <p>Start your business at any age, without an MBA. National and international startup scaling from Fatehpur UP.</p>
-    </div>
+    <div class="who-card" role="listitem"><span class="who-ico">🏫</span><h4>Class 5–10 Students</h4><p>Strong academic foundation, STEM skills, AI literacy — from rural Fatehpur UP to global-ready from a young age.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">🎓</span><h4>School &amp; College Graduates</h4><p>No job? Wrong degree? Build engineering, management and digital skills that the market actually needs right now.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">🔧</span><h4>ITI &amp; Diploma Holders</h4><p>Your degree is not useless. Add HVAC, FM, Python and Gulf job strategy — and command a salary you deserve.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">⚙️</span><h4>B.Tech Engineers</h4><p>Specialize in HVAC, MEP, AI, procurement or sales. Build a Gulf-ready portfolio and international career.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">💼</span><h4>Working Professionals</h4><p>Evening and weekend batches designed for you. Upskill in AI, management, sales without leaving your current job.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">👩‍💼</span><h4>Non-Technical People</h4><p>Procurement, site supervision, maintenance engineering, sales — skills you can learn without a technical background.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">🌍</span><h4>Gulf Job Aspirants</h4><p>UAE, Saudi Arabia, Qatar, Oman — full Gulf job preparation including resume, strategy and interview coaching.</p></div>
+    <div class="who-card" role="listitem"><span class="who-ico">🚀</span><h4>Future Entrepreneurs</h4><p>Start your business at any age, without an MBA. National and international startup scaling from Fatehpur UP.</p></div>
   </div>
 </section>
 
@@ -1222,7 +977,7 @@ footer{
       <div class="rev-quote">
         From the <em>weakest student</em> to a confident entrepreneur — HM Academy makes India's future happen today in Fatehpur UP.
       </div>
-      <p class="sec-sub">India's Vision 2035 demands engineers, managers, digital citizens and entrepreneurs. HM Academy produces exactly that — from Class 5, from rural Uttar Pradesh, from any starting point. This is our contribution to Make in India and Atmanirbhar Bharat.</p>
+      <p class="sec-sub">India's Vision 2035 demands engineers, managers, digital citizens and entrepreneurs. HM Academy produces exactly that — from Class 5, from rural Uttar Pradesh, from any starting point.</p>
       <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
         <a href="#programmes" class="btn-fire">Join the Revolution →</a>
         <a href="https://wa.me/919650329719" class="btn-ghost" style="border-color:rgba(255,255,255,0.2)" rel="noopener" target="_blank">💬 WhatsApp Sir</a>
@@ -1230,36 +985,12 @@ footer{
     </div>
     <div>
       <div class="make-cards" role="list">
-        <div class="make-card" role="listitem">
-          <div class="make-card-ico">🏗️</div>
-          <h4>Make in India</h4>
-          <p>Training Indians to build products and services for India and the world — from Fatehpur to global.</p>
-        </div>
-        <div class="make-card" role="listitem">
-          <div class="make-card-ico">🤖</div>
-          <h4>Digital India</h4>
-          <p>AI, Python, digital tools, online platforms — every student becomes digitally fluent and productive.</p>
-        </div>
-        <div class="make-card" role="listitem">
-          <div class="make-card-ico">💡</div>
-          <h4>Startup India</h4>
-          <p>Entrepreneurship without MBA. Build, launch, scale — on national and international platforms.</p>
-        </div>
-        <div class="make-card" role="listitem">
-          <div class="make-card-ico">🌾</div>
-          <h4>Rural India First</h4>
-          <p>Equal, premium education for rural students in Fatehpur, UP — no geography barrier.</p>
-        </div>
-        <div class="make-card" role="listitem">
-          <div class="make-card-ico">⚡</div>
-          <h4>Atmanirbhar Bharat</h4>
-          <p>Self-reliance in engineering, procurement, maintenance — India's industrial backbone built from the ground up.</p>
-        </div>
-        <div class="make-card" role="listitem">
-          <div class="make-card-ico">🌍</div>
-          <h4>Global India</h4>
-          <p>Gulf job readiness, international sales, global startup mindset — India's youth on the world stage.</p>
-        </div>
+        <div class="make-card" role="listitem"><div class="make-card-ico">🏗️</div><h4>Make in India</h4><p>Training Indians to build products and services for India and the world — from Fatehpur to global.</p></div>
+        <div class="make-card" role="listitem"><div class="make-card-ico">🤖</div><h4>Digital India</h4><p>AI, Python, digital tools, online platforms — every student becomes digitally fluent and productive.</p></div>
+        <div class="make-card" role="listitem"><div class="make-card-ico">💡</div><h4>Startup India</h4><p>Entrepreneurship without MBA. Build, launch, scale — on national and international platforms.</p></div>
+        <div class="make-card" role="listitem"><div class="make-card-ico">🌾</div><h4>Rural India First</h4><p>Equal, premium education for rural students in Fatehpur, UP — no geography barrier.</p></div>
+        <div class="make-card" role="listitem"><div class="make-card-ico">⚡</div><h4>Atmanirbhar Bharat</h4><p>Self-reliance in engineering, procurement, maintenance — India's industrial backbone built from ground up.</p></div>
+        <div class="make-card" role="listitem"><div class="make-card-ico">🌍</div><h4>Global India</h4><p>Gulf job readiness, international sales, global startup mindset — India's youth on the world stage.</p></div>
       </div>
     </div>
   </div>
@@ -1298,7 +1029,7 @@ footer{
     <div class="svc-card" itemscope itemtype="https://schema.org/Service">
       <div class="svc-ico-wrap">🌐</div>
       <h3 itemprop="name">Engineering Web Platforms &amp; SEO</h3>
-      <p>Lead-generating websites for engineers and consultants. Live engineering tools, Google Colab integrations, SEO for Indian markets. See AccumenTechno.com.</p>
+      <p>Lead-generating websites for engineers and consultants. Live engineering tools, Google Colab integrations, SEO for Indian markets.</p>
       <ul class="svc-items">
         <li>Lead Generation Websites</li>
         <li>Engineering Tool Integration</li>
@@ -1307,6 +1038,47 @@ footer{
         <li>India Local SEO</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<!-- BLOG TEASER -->
+<section class="blog-teaser-bg" id="blog" aria-labelledby="blog-heading">
+  <div style="text-align:center;max-width:680px;margin:0 auto">
+    <div class="sec-badge">Knowledge Hub</div>
+    <h2 class="sec-title" id="blog-heading">Free <em>Articles &amp; Guides</em></h2>
+    <p class="sec-sub" style="margin:0 auto">Engineering insights, career tips, Gulf job advice and entrepreneurship guides — free from HM Academy. <a href="blog.html" style="color:var(--saffron);font-weight:700">Read All Articles →</a></p>
+  </div>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <div class="blog-body">
+        <span class="blog-cat">HVAC Engineering</span>
+        <h3>How to Get a Gulf HVAC Job from Fatehpur UP — Complete 2025 Guide</h3>
+        <p>Step-by-step roadmap for ITI and Diploma holders in Uttar Pradesh targeting UAE, Saudi Arabia and Qatar HVAC roles. Resume tips, salary benchmarks, interview prep.</p>
+        <a href="blog.html#hvac-gulf" class="blog-read">Read Article</a>
+      </div>
+      <div class="blog-meta">📅 2025 · 8 min read · HVAC · Gulf Jobs · UP</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-body">
+        <span class="blog-cat">Entrepreneurship</span>
+        <h3>Start a Business Without an MBA — How Rural India Can Build Global Startups</h3>
+        <p>You don't need an MBA from IIM to start and scale a business. HM Academy's entrepreneurship framework for students from Class 5 onwards, aligned with India Vision 2035.</p>
+        <a href="blog.html#startup-no-mba" class="blog-read">Read Article</a>
+      </div>
+      <div class="blog-meta">📅 2025 · 6 min read · Startup India · Rural Education</div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-body">
+        <span class="blog-cat">AI &amp; Digital Skills</span>
+        <h3>Top 10 Free AI Tools Every Engineering Student in UP Should Know in 2025</h3>
+        <p>From ChatGPT to Google Colab — the free AI and digital tools that will make any engineering student job-ready, even from rural Fatehpur and Kanpur.</p>
+        <a href="blog.html#ai-tools-engineers" class="blog-read">Read Article</a>
+      </div>
+      <div class="blog-meta">📅 2025 · 5 min read · AI Tools · Digital India</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px">
+    <a href="blog.html" class="btn-fire" style="display:inline-flex">✍️ Read All Articles on Blog →</a>
   </div>
 </section>
 
@@ -1328,8 +1100,7 @@ footer{
         <span class="ltag" role="listitem">🏙️ Lucknow UP</span>
         <span class="ltag" role="listitem">🌍 Gulf Countries</span>
       </div>
-      <!-- Proof cards -->
-      <div class="proof-grid" style="margin-top:32px">
+      <div class="proof-grid">
         <div class="proof-card">
           <div class="proof-stars">★★★★★</div>
           <p class="proof-text">"HM Academy ne meri zindagi badal di. HVAC course ke baad Gulf interview mein exactly wahi questions aye jo Sir ne padhaye the."</p>
@@ -1386,6 +1157,13 @@ footer{
             <span>Free HVAC &amp; career guidance videos</span>
           </div>
         </div>
+        <div class="crow">
+          <div class="cico">✍️</div>
+          <div class="cinfo">
+            <a href="blog.html">HM Academy Blog</a>
+            <span>Free engineering &amp; career articles</span>
+          </div>
+        </div>
         <div class="cbtns">
           <a href="https://wa.me/919650329719?text=Hello%20Sir%2C%20I%20want%20to%20join%20HM%20Academy%20-%20please%20share%20batch%20details" class="cwa" rel="noopener" target="_blank">💬 WhatsApp Sir Now</a>
           <a href="tel:+919650329719" class="ccall">📞 Call Directly</a>
@@ -1404,52 +1182,31 @@ footer{
   </div>
   <div class="faq-inner" role="list">
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>What is HM Academy (Hilal Madany)?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>What is HM Academy (Hilal Madany)?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">HM Academy (Hilal Madany) is Under registered society in Khalilnagar, Fatehpur, Uttar Pradesh. Founded by Syed Hilaluddin Madany (14+ years MEP &amp; FM experience), HM Academy's mission is to bridge the education gap between rural and urban India — providing engineering, management, AI, sales, procurement, entrepreneurship and academic skills from Class 5 onwards, aligned with India Vision 2035 and Make in India.</div>
     </div>
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>Can Class 5 students join HM Academy?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>Can Class 5 students join HM Academy?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">Yes. HM Academy provides strong academic foundation coaching from Class 5 onwards in Maths and Science for UP Board, CBSE, and ICSE students. Using PhET simulations, AI tools and GeoGebra, we make STEM exciting and accessible for all students — regardless of grades or background. In-person in Fatehpur area and online across India.</div>
     </div>
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>Do I need an MBA to become an entrepreneur through HM Academy?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>Do I need an MBA to become an entrepreneur through HM Academy?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">No MBA needed. HM Academy's entrepreneurship programme teaches you business model building, sales, marketing, digital go-to-market, procurement, project management and international scaling — all practical skills that let you start and grow a business from any age. This is the alternative to an MBA, built for India's Vision 2035.</div>
     </div>
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>What is the fee for HVAC course at HM Academy in Fatehpur?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>What is the fee for HVAC course at HM Academy in Fatehpur?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">HVAC course at HM Academy: ₹2,000 for the 6-week programme, up to ₹8,000 for the full 6-month ASHRAE-standard course with certificate. Weekend and weekday batches available. The complete MEP + Entrepreneur flagship programme is ₹12,000–₹18,000 (EMI available). Academic coaching starts from ₹300/month.</div>
     </div>
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>Can non-technical people learn procurement and site engineering?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>Can non-technical people learn procurement and site engineering?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">Absolutely. HM Academy's Procurement, Site &amp; Maintenance Engineering programme is specifically designed so that non-technical people can master vendor management, procurement strategy, site supervision and maintenance planning. Many HM Academy students with no technical background go on to start their own contracting businesses.</div>
     </div>
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>Is HM Academy online or only in Fatehpur?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>Is HM Academy online or only in Fatehpur?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">Both. In-person classes are held in Khalilnagar, Fatehpur UP (near Haswa and Chak Korra Sadat). Online batches are open to students and professionals across all of India — including Kanpur, Allahabad, Prayagraj, Lucknow and beyond. Weekend batches are specifically for working professionals.</div>
     </div>
     <div class="faq-item" role="listitem">
-      <div class="faq-q" tabindex="0" role="button" aria-expanded="false">
-        <span>How does HM Academy support the Make in India and India Vision 2035 mission?</span>
-        <span class="faq-arr" aria-hidden="true">+</span>
-      </div>
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false"><span>How does HM Academy support the Make in India and India Vision 2035 mission?</span><span class="faq-arr" aria-hidden="true">+</span></div>
       <div class="faq-a">Every programme at HM Academy is built around India's 2035 self-reliance goal. We train individuals in engineering, management, AI, digital, procurement and entrepreneurship skills so India produces world-class talent from rural Uttar Pradesh — contributing to Make in India, Digital India, Startup India and Atmanirbhar Bharat from Day One of training.</div>
     </div>
   </div>
@@ -1463,6 +1220,7 @@ footer{
     <div class="cta-btns">
       <a href="https://wa.me/919650329719?text=I%20want%20to%20join%20HM%20Academy%20-%20please%20share%20batch%20details" class="btn-fire" rel="noopener" target="_blank">💬 WhatsApp Sir Now</a>
       <a href="tel:+919650329719" class="btn-ghost" style="border-color:rgba(255,255,255,0.25);color:#fff">📞 +91 96503 29719</a>
+      <a href="blog.html" class="btn-ghost" style="border-color:rgba(255,255,255,0.25);color:#fff">✍️ Read Our Blog</a>
       <a href="https://youtube.com/@hilalmadany" class="btn-ghost" style="border-color:rgba(255,255,255,0.25);color:#fff" rel="noopener" target="_blank">▶️ Watch on YouTube</a>
     </div>
   </div>
@@ -1505,12 +1263,14 @@ footer{
       <a href="#programmes">Academic Cl 5–10</a>
     </div>
     <div class="foot-col">
-      <h4>Services</h4>
+      <h4>Quick Links</h4>
+      <a href="index.html">🏠 Home</a>
+      <a href="blog.html">✍️ Blog &amp; Articles</a>
+      <a href="#mission">Our Mission</a>
+      <a href="#faq">FAQ</a>
       <a href="#services">MEP Consulting</a>
       <a href="#services">Gulf Job Consulting</a>
       <a href="#services">Resume Writing</a>
-      <a href="#services">LinkedIn Profile</a>
-      <a href="#services">Web Platforms</a>
       <a href="https://www.accumentechno.com" target="_blank" rel="noopener">AccumenTechno.com</a>
     </div>
     <div class="foot-col">
@@ -1524,7 +1284,7 @@ footer{
     </div>
   </div>
   <div class="foot-bottom">
-    <span>© 2025 HM Academy (Hilal Madany) — Under registered society · Khalilnagar, Fatehpur, UP</span>
+    <span>© 2025 HM Academy (Hilal Madany) — Under registered society · Khalilnagar, Fatehpur, UP &nbsp;|&nbsp; <a href="index.html" style="color:rgba(255,255,255,0.4);">Home</a> · <a href="blog.html" style="color:rgba(255,255,255,0.4);">Blog</a> · <a href="#contact" style="color:rgba(255,255,255,0.4);">Contact</a></span>
     <div style="display:flex;align-items:center;gap:8px">
       <div class="foot-flag" aria-label="Made in India" title="Made in India">
         <span class="ff1"></span><span class="ff2"></span><span class="ff3"></span>
@@ -1538,40 +1298,53 @@ footer{
 <a href="https://wa.me/919650329719?text=Hello%20Sir%2C%20I%20found%20HM%20Academy%20website%20and%20want%20to%20enquire%20about%20joining" class="float-wa" rel="noopener" target="_blank" aria-label="Chat on WhatsApp with HM Academy">💬</a>
 
 <script>
-  // FAQ Accordion
-  document.querySelectorAll('.faq-q').forEach(function(q){
-    function toggle(){
-      var item=q.parentElement;
-      var open=item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(i){
-        i.classList.remove('open');
-        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
-      });
-      if(!open){item.classList.add('open');q.setAttribute('aria-expanded','true')}
+// FAQ Accordion
+document.querySelectorAll('.faq-q').forEach(function(q){
+  function toggle(){
+    var item=q.parentElement;
+    var open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(i){
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if(!open){item.classList.add('open');q.setAttribute('aria-expanded','true')}
+  }
+  q.addEventListener('click',toggle);
+  q.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}});
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+
+// Animate on scroll
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(en){
+    if(en.isIntersecting){en.target.style.opacity='1';en.target.style.transform='translateY(0)'}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.pillar,.who-card,.prog-card,.svc-card,.proof-card,.make-card,.blog-card').forEach(function(el){
+  el.style.opacity='0';el.style.transform='translateY(20px)';
+  el.style.transition='opacity .5s ease, transform .5s ease';
+  obs.observe(el);
+});
+
+// Highlight active back link on scroll
+var sections=['home','mission','programmes','who','india','services','blog','faq','contact'];
+window.addEventListener('scroll',function(){
+  var scrollY=window.scrollY+80;
+  sections.forEach(function(id){
+    var el=document.getElementById(id);
+    if(!el)return;
+    if(el.offsetTop<=scrollY&&el.offsetTop+el.offsetHeight>scrollY){
+      document.querySelectorAll('.back-links a').forEach(function(a){a.classList.remove('active')});
     }
-    q.addEventListener('click',toggle);
-    q.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}});
   });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){
-      var t=document.querySelector(this.getAttribute('href'));
-      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
-    });
-  });
-
-  // Animate sections on scroll
-  var obs=new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if(en.isIntersecting){en.target.style.opacity='1';en.target.style.transform='translateY(0)'}
-    });
-  },{threshold:0.1});
-  document.querySelectorAll('.pillar,.who-card,.prog-card,.svc-card,.proof-card,.make-card').forEach(function(el){
-    el.style.opacity='0';el.style.transform='translateY(20px)';
-    el.style.transition='opacity .5s ease, transform .5s ease';
-    obs.observe(el);
-  });
+});
 </script>
 </body>
 </html>
